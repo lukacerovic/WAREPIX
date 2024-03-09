@@ -124,7 +124,7 @@ export default function Home() {
             style={{ paddingTop: "5vw", paddingBottom: "5vw" }}
             className="text-center text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase"
           >
-            Your Vision <br /> Our Experties
+            Your Vision <br /> Our Expertise
           </h1>
           <div
             className="flex justify-between py-5"
