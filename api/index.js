@@ -5,7 +5,10 @@ import cors from 'cors';
 const app = express();
 const corsAllowedOrigin = [
     'https://www.warepix.com/',
-    'http://localhost:3001',
+    'www.warepix.com',
+    'warepix.com',
+
+    
 
 ]
 app.use(express.json());
