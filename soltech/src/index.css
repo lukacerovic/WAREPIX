@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Kanit-Black';
+    src: local('Kanit-Black'), url(./fonts/Kanit-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: local('Comfortaa-Regular'), url(./fonts/Comfortaa-Regular.ttf) format("truetype");
+}
+
+h1 {
+    font-family: 'Kanit-Black', sans-serif; /* Koristi Kanit-Black kao podrazumevani font za h1 */
+}
+
+p, button {
+    font-family: 'Comfortaa-Regular', sans-serif;
+}
+.rounded-3xl {
+    transition: all 0.3s ease;
+}
+
+.rounded-3xl:hover {
+    transform: scale(1.1); /* Povećava element za 5% kada je u hover stanju */
+}
+
+@keyframes moveRight {
+    to {
+        transform: translateX(300px) translateY(300px);
+    }
+}
+
+@keyframes moveLeft {
+    to {
+        transform: translateX(-400px) translateY(1500px);
+    }
+}
+
