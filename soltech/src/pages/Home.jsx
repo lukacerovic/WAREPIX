@@ -102,7 +102,7 @@ export default function Home() {
     setReviewMessage(true);
     setActiveSection("");
     try {
-      const res = await fetch("/api/message/send", {
+      const res = await fetch("https://easy-pinafore-cow.cyclic.app/api/message/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
