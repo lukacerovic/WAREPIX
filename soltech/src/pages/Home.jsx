@@ -10,10 +10,11 @@ import "swiper/css/bundle";
 import { Link, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import Room from "../../public/model/Room";
 
 import { Canvas } from "@react-three/fiber";
 import PersonalAvatarModel from "../../public/model/PersonalAvatarModel";
+// import Room from "../../public/model/Room";
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -130,7 +131,7 @@ export default function Home() {
             className="flex justify-between py-5"
             style={{ paddingInline: "5vw" }}
           >
-            <div style={{ width: "30vw", }}>
+            <div style={{width: "30vw", }}>
               <p className="text-white pb-10 text-xs  md:text-lg lg:text-xl xl:text-3xl">
                 Embark on journey where your ideas come to life.
                 <br />
@@ -143,7 +144,7 @@ export default function Home() {
                 to elevate your brand's unique identity
               </p>
             </div>
-            <div style={{ height: "35vw", width: "50vw" }}>
+            {/* <div style={{ height: "35vw", width: "50vw" }}>
               <Canvas>
                 <ambientLight /> 
                 <OrbitControls
@@ -158,7 +159,7 @@ export default function Home() {
                 <Environment preset='sunset'/>
                
               </Canvas>
-            </div>
+            </div> */}
 
             <div
               style={{ width: "22vw", marginTop: "-5vw" }}
@@ -175,43 +176,39 @@ export default function Home() {
           className="self-center w-full flex flex-col"
           style={{ marginTop: "10vw" }}
         >
-          <h1 className="text-white text-center uppercase" style={{fontSize:'3vw', paddingBottom:'4vw'}}>
+          <h1 className="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase" style={{paddingBottom:'4vw'}}>
             Services We Provide
           </h1>
-          <div className="flex gap-10 flex-1 flex-wrap self-center justify-center">
+          <div className="flex gap-10 px-[5vw] flex-1 flex-wrap self-center justify-center">
             <div
-              className="rounded-3xl flex flex-col text-center"
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
               style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+                paddingInline: "1%",
                 background: "linear-gradient(to bottom, #16a3ef, #d26ac1)",
               }}
             >
               <img className="cover h-50" src="images/web.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Experience a full spectrum of website services tailored to your
                 needs, including Design, Deployment, Maintenance, Error
                 resolution, and robust security implementation. We're your
                 one-stop solution for a seamless and secure online presence.
               </p>
               <Link to="/web"  className="self-center bottom-0 w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px', background:'linear-gradient(to bottom, #16a3ef, #d26ac1)', fontSize:'1.5vw',padding:'1vw', marginTop:'2vw'}}>
+                <button className='rounded-lg' style={{width:'100%', background:'linear-gradient(to bottom, #16a3ef, #d26ac1)', fontSize:'1.5vw',padding:'1vw', marginTop:'2vw'}}>
                   Explore
                 </button>
               </Link>
             </div>
             <div
-              className="rounded-3xl flex flex-col text-center"
-              style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
+              style={{ 
+                paddingInline: "1%",
                 background: "linear-gradient(to right, #04A8A8, #A37FDD)",
               }}
             >
               <img className="cover h-50" src="images/mobile.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Empower your mobile presence with our comprehensive app
                 solutions, spanning design, development, deployment,
                 maintenance, error resolution, and robust security
@@ -224,16 +221,14 @@ export default function Home() {
               </Link>
             </div>
             <div
-              className="rounded-3xl flex flex-col text-center"
-              style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
+              style={{ 
+                paddingInline: "1%",
                 background: "linear-gradient(to bottom, #A80493, #FEE0FF)",
               }}
             >
               <img className="cover h-50" src="images/mvp.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Accelerate your project with our end-to-end MVP development
                 services, covering ideation, rapid prototyping, testing,
                 iteration, and efficient deployment. We provide a comprehensive
@@ -247,16 +242,14 @@ export default function Home() {
               </Link>
             </div>
             <div
-              className="rounded-3xl flex flex-col text-center"
-              style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
+              style={{ 
+                paddingInline: "1%",
                 background: "linear-gradient(to bottom, #FF2700, #FFEB97)",
               }}
             >
               <img className="cover" src="images/logoService.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Elevate your brand identity with our comprehensive logo design
                 services, encompassing creative ideation, meticulous design
                 development, iterative refinement, and final implementation. We
@@ -270,16 +263,14 @@ export default function Home() {
               </Link>
             </div>
             <div
-              className="rounded-3xl flex flex-col text-center"
-              style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
+              style={{ 
+                paddingInline: "1%",
                 background: "linear-gradient(to bottom, #80FF44, #0066FF)",
               }}
             >
               <img className="cover h-50" src="images/animations.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Bring your ideas to life with our versatile animation creation
                 services. From concept development and design to seamless
                 execution, we offer a comprehensive solution for crafting
@@ -292,16 +283,14 @@ export default function Home() {
               </Link>
             </div>
             <div
-              className="rounded-3xl flex flex-col text-center"
-              style={{
-                width: "30vw",
-                
-                paddingInline: "2%",
+              className="rounded-[1vw] flex flex-col text-center sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[30%]"
+              style={{ 
+                paddingInline: "1%",
                 background: "linear-gradient(to bottom, #44ABFF, #00FFF7)",
               }}
             >
               <img className="cover h-50" src="images/maintain.png" />
-              <p style={{padding:'0.5vw', fontSize:'1vw'}}>
+              <p style={{padding:'0.5vw'}} className='text-xs  md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 We provide ongoing maintenance and updates for your websites,
                 mobile apps, logos, and animations, ensuring your digital assets
                 are always optimized and aligned with your evolving needs. Trust
@@ -494,19 +483,19 @@ export default function Home() {
           style={{ paddingInline: "8vw", marginBottom: "20vh" }}
         >
           <h1
-            style={{ color: "#5271FF", fontSize: "5vw" }}
-            className="uppercase"
+            style={{ color: "#5271FF"}}
+            className="uppercase text-6xl  md:text-7xl lg:text-8xl xl:text-9xl my-[8vw]"
           >
             Contact Us
           </h1>
           <div className="flex justify-between items-center">
-            <div style={{ width: "50%", fontSize:'2vw', color:'white' }}>
+            <div style={{ width: "60%", color:'white' }} className='text-2xl  md:text-3xl lg:text-4xl xl:text-5xl'>
               <p>
                 Contact us for any service you need, and let's explore the
                 perfect solution for your requirements together.
               </p>
             </div>
-            <div style={{ width: "20vw" }}>
+            <div style={{ width: "30%" }}>
               <img
                 className="shadow"
                 src="/images/soltechLogo.png"
@@ -519,10 +508,10 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1 style={{ width: "50vw", color: "#5271FF", fontSize: "2.5vw" }}>
+            <h1 style={{ width: "50vw", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-3xl  md:text-4xl lg:text-5xl xl:text-6xl'>
               Your ideal digital solution is just a conversation away.
             </h1>
-            <span className="flex items-center" style={{fontSize:'2vw', marginTop:'2vw', marginBottom:'1.5vw'}}>
+            <span className="flex items-center text-2xl  md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
               <MdOutlineMail color="white" size={60} />
               <p className="text-white">
                 warepixsolutions@gmail.com
@@ -532,16 +521,16 @@ export default function Home() {
           <button
             type="button"
             onClick={() => handleSectionClick("form")}
-            style={{ marginTop: "5vh", padding:'1vw', fontSize:'1.5vw', marginBottom:'2vw' }}
-            className="bg-pink-500 text-white rounded-lg"
+            style={{ marginTop: "5vh", padding:'1vw', marginBottom:'2vw' }}
+            className="bg-pink-500 text-white rounded-lg text-3xl  md:text-4xl lg:text-5xl xl:text-6xl"
           >
             Contact Us Directly
           </button>
           {activeSection === "form" && (
             <form
               onSubmit={handleSendForm}
-              style={{ width: "60vw", gap:'1vw', fontSize:'1.3vw' }}
-              className="flex flex-col"
+              style={{ width: "60vw", gap:'1vw'}}
+              className="flex flex-col text-xl  md:text-2xl lg:text-3xl xl:text-4xl"
             >
               <input
                 className="p-3 rounded-lg"
@@ -575,7 +564,7 @@ export default function Home() {
                 id="message"
                 onChange={handleChange}
               />
-              <button className="w-full bg-green-500 text-center rounded-lg uppercase" style={{padding:'0.7vw', fontSize:'1.3vw'}}>
+              <button className="w-full bg-green-500 text-center rounded-lg text-xl  md:text-2xl lg:text-3xl xl:text-4xl uppercase" style={{padding:'0.7vw'}}>
                 Send Message
               </button>
             </form>
