@@ -130,8 +130,8 @@ export default function Home() {
             className="flex justify-between py-5"
             style={{ paddingInline: "5vw" }}
           >
-            <div style={{ width: "30vw", paddingLeft: "2vw" }}>
-              <p className="text-white pb-10" style={{ fontSize: "1.3vw" }}>
+            <div style={{ width: "30vw", }}>
+              <p className="text-white pb-10 text-xs  md:text-lg lg:text-xl xl:text-3xl">
                 Embark on journey where your ideas come to life.
                 <br />
                 <br />

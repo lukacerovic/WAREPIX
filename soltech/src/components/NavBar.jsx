@@ -12,27 +12,27 @@ export default function NavBar() {
         
         <div className='text-white flex self-center justify-between' style={{gap:'7vw'}}>
             <div>
-                <Link to='http://localhost:5173/#portfolio'>
+                <Link to='https://www.warepix.com/#portfolio'>
                   <h1 style={{fontSize:'1.7vw'}}>Portfolio</h1>  
                 </Link>
             </div>
             <div>
-                <Link to='http://localhost:5173/#services'>
+                <Link to='https://www.warepix.com/#services'>
                   <h1 style={{fontSize:'1.7vw'}}>Services</h1>  
                 </Link>
             </div>
             <div>
-                <Link to='http://localhost:5173/about'>
+                <Link to='https://www.warepix.com/about'>
                   <h1 style={{fontSize:'1.7vw'}}>About Us</h1>  
                 </Link>
             </div>
             <div>
-                <Link to='http://localhost:5173/work-details'>
+                <Link to='https://www.warepix.com/work-details'>
                   <h1 style={{fontSize:'1.7vw'}}>How We Work</h1>  
                 </Link>
             </div>
             <div>
-                <Link to='http://localhost:5173/#contact'>
+                <Link to='https://www.warepix.com/#contact'>
                   <h1 style={{fontSize:'1.7vw'}}>Contact</h1>  
                 </Link>
             </div>
