@@ -132,7 +132,7 @@ export default function Home() {
             style={{ paddingInline: "5vw" }}
           >
             <div style={{width: "30vw", }}>
-              <p className="text-white pb-10 text-xs  md:text-lg lg:text-xl xl:text-3xl">
+              <p className="text-white pb-10 text-[8px] sm:text-xs md:text-lg lg:text-xl xl:text-3xl">
                 Embark on journey where your ideas come to life.
                 <br />
                 <br />
@@ -195,7 +195,7 @@ export default function Home() {
                 one-stop solution for a seamless and secure online presence.
               </p>
               <Link to="/web"  className="self-center bottom-0 w-[100%]">
-                <button className='rounded-lg' style={{width:'100%', background:'linear-gradient(to bottom, #16a3ef, #d26ac1)', fontSize:'1.5vw',padding:'1vw', marginTop:'2vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%', background:'linear-gradient(to bottom, #16a3ef, #d26ac1)',padding:'1vw', marginTop:'2vw'}}>
                   Explore
                 </button>
               </Link>
@@ -215,7 +215,7 @@ export default function Home() {
                 implementation.
               </p>
               <Link to="/mobile" className="self-center w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to right, #A37FDD, #04A8A8)', fontSize:'1.5vw',padding:'1vw', marginTop:'5vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to right, #A37FDD, #04A8A8)',padding:'1vw', marginTop:'5vw'}}>
                   Explore
                 </button>
               </Link>
@@ -236,7 +236,7 @@ export default function Home() {
                 successful launch.
               </p>
               <Link to="/mvp" className="self-center w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #FEE0FF, #A80493)', fontSize:'1.5vw',padding:'1vw', marginTop:'1vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #FEE0FF, #A80493)',padding:'1vw', marginTop:'1vw'}}>
                   Explore
                 </button>
               </Link>
@@ -257,7 +257,7 @@ export default function Home() {
                 distinctive and impactful representation for your brand.
               </p>
               <Link to="/logo" className="self-center w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #FF2700, #FFEB97)', fontSize:'1.5vw',padding:'1vw', marginTop:'1vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #FF2700, #FFEB97)',padding:'1vw', marginTop:'1vw'}}>
                   Explore
                 </button>
               </Link>
@@ -277,7 +277,7 @@ export default function Home() {
                 engaging animations of all kinds.
               </p>
               <Link to="/animations" className="self-center w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #0066FF, #80FF44)', fontSize:'1.5vw',padding:'1vw', marginTop:'6vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%',borderWidth:'3px',background:'linear-gradient(to bottom, #0066FF, #80FF44)',padding:'1vw', marginTop:'6vw'}}>
                   Explore
                 </button>
               </Link>
@@ -297,7 +297,7 @@ export default function Home() {
                 us for sustained success in the digital landscape.
               </p>
               <Link to="/maintain" className="self-center w-[100%]">
-                <button className='rounded-lg' style={{width:'100%',borderWidth:'3px', background:'linear-gradient(to bottom, #00FFF7, #44ABFF)', fontSize:'1.5vw',padding:'1vw', marginTop:'2vw'}}>
+                <button className='rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl' style={{width:'100%',borderWidth:'3px', background:'linear-gradient(to bottom, #00FFF7, #44ABFF)',padding:'1vw', marginTop:'2vw'}}>
                   Explore
                 </button>
               </Link>
@@ -328,7 +328,7 @@ export default function Home() {
             fontSize:'3vw'
           }}
         >
-          <h1 className="text-white self-center uppercase">
+          <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl self-center uppercase">
             Web Projects
           </h1>
           <div style={{ width: "90vw", margin: "0 auto" }} className="mt-5">
@@ -342,7 +342,7 @@ export default function Home() {
                 }, [])
                 .map((imageGroup, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex gap-9">
+                    <div className="flex gap-[3vw]">
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
@@ -363,13 +363,13 @@ export default function Home() {
         </div>
         <div
           ref={mobileProjects}
-          className="self-start flex flex-col"
-          style={{ gap: "8vh", position: "relative", zIndex: 10, fontSize:'3vw' }}
+          className="self-start flex flex-col text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          style={{ gap: "8vh", position: "relative", zIndex: 10, }}
         >
           <h1 className="text-white self-center uppercase">
             Mobile Projects
           </h1>
-          <div style={{ width: "50vw", margin: "0 auto" }} className="mt-5">
+          <div style={{ width: "60vw", margin: "0 auto" }} className="mt-5">
             <Swiper navigation>
               {mobileImageContainer
                 .reduce((accumulator, currentValue, index) => {
@@ -382,7 +382,7 @@ export default function Home() {
                 }, [])
                 .map((imageGroup, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex gap-9">
+                    <div className="flex gap-[3vw]">
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
@@ -413,10 +413,10 @@ export default function Home() {
             fontSize:'3vw'
           }}
         >
-          <h1 className="text-white self-center uppercase">
+          <h1 className="text-white self-center text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl uppercase">
             Logo Projects
           </h1>
-          <div style={{ width: "50vw", margin: "0 auto" }} className="mt-5">
+          <div style={{ width: "60vw", margin: "0 auto" }} className="mt-5">
             <Swiper navigation>
               {logoImageContainer
                 .reduce((accumulator, currentValue, index) => {
@@ -429,7 +429,7 @@ export default function Home() {
                 }, [])
                 .map((imageGroup, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex gap-9">
+                    <div className="flex gap-[3vw]">
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
@@ -452,7 +452,7 @@ export default function Home() {
         </div>
         <div
           style={{ position: "sticky", zIndex: 0 }}
-          className="sm:h-[180vw] h-[150vw] -mt-[270vw] xs:-mt-[215vw] sm:-mt-[220vw]  md:-mt-[190vw] lg:-mt-[180vw] xl:-mt-[175vw]"
+          className="h-[230vw] sm:h-[180vw] h-[150vw] -mt-[270vw] xs:-mt-[215vw] sm:-mt-[220vw]  md:-mt-[190vw] lg:-mt-[180vw] xl:-mt-[175vw]"
         >
           <Canvas
             ref={modelContainer}
@@ -484,12 +484,12 @@ export default function Home() {
         >
           <h1
             style={{ color: "#5271FF"}}
-            className="uppercase text-6xl  md:text-7xl lg:text-8xl xl:text-9xl my-[8vw]"
+            className="uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl my-[8vw]"
           >
             Contact Us
           </h1>
           <div className="flex justify-between items-center">
-            <div style={{ width: "60%", color:'white' }} className='text-2xl  md:text-3xl lg:text-4xl xl:text-5xl'>
+            <div style={{ width: "60%", color:'white' }} className='text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
               <p>
                 Contact us for any service you need, and let's explore the
                 perfect solution for your requirements together.
@@ -508,10 +508,10 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1 style={{ width: "50vw", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-3xl  md:text-4xl lg:text-5xl xl:text-6xl'>
+            <h1 style={{ width: "90%", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>
               Your ideal digital solution is just a conversation away.
             </h1>
-            <span className="flex items-center text-2xl  md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
+            <span className="flex items-center text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
               <MdOutlineMail color="white" size={60} />
               <p className="text-white">
                 warepixsolutions@gmail.com
@@ -522,7 +522,7 @@ export default function Home() {
             type="button"
             onClick={() => handleSectionClick("form")}
             style={{ marginTop: "5vh", padding:'1vw', marginBottom:'2vw' }}
-            className="bg-pink-500 text-white rounded-lg text-3xl  md:text-4xl lg:text-5xl xl:text-6xl"
+            className="bg-pink-500 text-white rounded-lg text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
             Contact Us Directly
           </button>

@@ -62,11 +62,20 @@ export default function Model(props) {
       .to(
         animateModel.current.position,
         {
-          y: -2.5,
+          y: -1,
 
           duration: 1,
         },
         "start"
+      )
+      .to(
+        animateModel.current.position,
+        {
+          y: -2.5,
+
+          duration: 1,
+        },
+        "end"
       )
       .from(
         props.textAnimate[0].current,
@@ -81,7 +90,7 @@ export default function Model(props) {
       .timeline({
         scrollTrigger: {
           trigger: props.element.current,
-          start: "top top",
+          start: "top 15%",
           end: "center center",
           scrub: true,
         },

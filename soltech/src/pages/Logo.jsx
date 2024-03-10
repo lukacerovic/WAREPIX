@@ -19,60 +19,60 @@ export default function Logo() {
     <div className='flex flex-col'style={{gap:'10vw', background:'linear-gradient(to bottom, black, #595858)'}}>
       <NavBar/>
       <div className='flex flex-col'>
-            <div className='flex sm:flex-col md:flex-col gap-10 lg:flex-row lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
-                <div className='text-white flex flex-col gap-10' style={{width:'60vw'}}>
-                    <h1 className='uppercase' style={{fontSize:'4vw'}}>Your Logo <br/>Your Signature</h1>
-                    <p style={{fontSize:'1.3vw'}}>
+            <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
+                <div className='text-white flex flex-col gap-[2vw]' style={{width:'60vw'}}>
+                    <h1 className='uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl'>Your Logo <br/>Your Signature</h1>
+                    <p className='text-xs w-[150%] sm:text-sm md:text-md lg:text-lg lg:w-[60%] xl:text-lg'>
                       Elevate your brand identity with our bespoke logo design service. At the intersection of artistry and strategy, we craft logos that resonate with your audience and stand the test of time. Our team of visionary designers meticulously shapes each element, capturing the essence of your brand in every curve and color. Let your logo be more than just a symbol – let it be the emblem of your story, the cornerstone of your success.
                     </p> 
                     <div className='flex gap-5 text-xl'>
                       <Link to='http://localhost:5173/#contact'>
-                        <button className='bg-cyan-500 p-3 rounded-lg'>Contact Us</button>
+                        <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                     </div>
                     
                 </div>
-                <div >
+                <div className='h-[100vw] sm:h-[50vw] md:h-[50vw] lg:h-[50vw] xl:h-[50vw] 2xl:h-[50vw]'>
                     <Spline scene='https://prod.spline.design/boK9DZzm1GfKNPIj/scene.splinecode'/> 
                 </div>
             </div>
         </div>
-      <div className='flex justify-between items-center text-white' style={{paddingInline:'10vw'}}>
+      <div className='flex justify-between items-center text-white px-[5vw]'>
         <div className='flex flex-col gap-10 relative' style={{ width: '60vw', borderTop:'none', borderBottom:'none', borderLeft:'none', borderRightWidth:'2px' }}>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-              <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><RiLightbulbFlashLine className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw] uppercase' style={{zIndex:'10'}}>
+              <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><RiLightbulbFlashLine className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               IDEAS
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('ideas')}/>
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><FaPaintBrush className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw] uppercase' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><FaPaintBrush className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               DESIGN
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('design')}/>
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><MdOutlineTextFields className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw] uppercase' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><MdOutlineTextFields className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               TEXT BASED DESIGN
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('text')}/> 
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan',}}><PiImagesBold className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw] uppercase' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><PiImagesBold className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               IMAGE BASED DESIGN
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('image')}/>
           </div>
           
-          <div className="absolute rounded-lg sm:left-8 lg:left-10 xl:left-14 top-10 bottom-20 w-2" style={{zIndex:'0', background:'linear-gradient(#5DE0E6, #038096)'}}></div>
+          <div className="absolute rounded-lg h-[90%] left-[5.5%] sm:left-[8%] lg:left-10 xl:left-14 top-5 w-2" style={{zIndex:'0', background:'linear-gradient(#5DE0E6, #038096)'}}></div>
         </div>
         <div style={{ width: '50vw', paddingLeft:'3vw' }}>
           {activeSection === 'ideas' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
               We specialize in ideation and bringing our clients' visions to life as web projects. 
               Our focus lies in conceptualizing and implementing innovative ideas tailored specifically for web projects. 
               Whether it's crafting a static website or developing a dynamic web application, we excel in translating client ideas into digital realities. 
@@ -81,7 +81,7 @@ export default function Logo() {
             </p>
           )}
           {activeSection === 'design' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
               At our core, we thrive on crafting comprehensive UI designs tailored to our clients' needs. 
               We offer full-scale UI design solutions, from conceptualizing brand-new designs from scratch to bringing our clients' specific design visions to life. 
               We specialize in adapting to mixed scenarios, seamlessly blending our creativity with our clients' requirements. 
@@ -91,12 +91,12 @@ export default function Logo() {
             </p>
           )}
           {activeSection === 'text' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
              We specialize in crafting text-based logos that leave a lasting impression. Our services encompass the complete design and layout of your logo from scratch, ensuring a unique and memorable identity for your brand. With meticulous attention to typography, color, and layout, we create logos that resonate with your target audience while reflecting your brand's essence. We work closely with clients to understand their vision and requirements, tailoring the design to perfectly align with their preferences and objectives. Let us bring your brand to life with a stunning text-based logo that stands out in the crowded marketplace.
             </p>
           )}
           {activeSection === 'image' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
              We excel in creating image-based logos that speak volumes about your brand. Our team is dedicated to conceptualizing and designing visually striking logos that capture the essence of your brand identity. Whether it's illustrating your company's values or showcasing your unique offerings, we meticulously craft each element to evoke the desired emotions and perceptions. We collaborate closely with our clients, understanding their brand ethos and aspirations to create logos that resonate with their target audience. From ideation to execution, we ensure your image-based logo is a true reflection of your brand's personality and aspirations, leaving a lasting impression on your audience
             </p>
           )}
@@ -137,7 +137,7 @@ export default function Logo() {
         
       </div>
       <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>
-          <button className='bg-cyan-500 p-3 text-3xl rounded-lg'>Contact Us</button>
+          <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       <Footer/>
     </div>

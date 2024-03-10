@@ -20,69 +20,69 @@ export default function Web() {
     <div className='flex flex-col'style={{gap:'8vw', background:'linear-gradient(to bottom, black, #595858)'}}>
       <NavBar/>
       <div className='flex flex-col'>
-            <div className='flex sm:flex-col md:flex-col gap-[2vw] lg:flex-row lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
+            <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-[2vw]' style={{width:'60vw'}}>
-                    <h1 className='uppercase' style={{fontSize:'4vw'}}>Gain Your <br/> Web Identity</h1>
-                    <p style={{fontSize:'1.3vw'}}>
+                    <h1 className='uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl'>Gain Your <br/> Web Identity</h1>
+                    <p className='text-xs w-[150%] sm:text-sm md:text-md lg:text-lg lg:w-[60%] xl:text-lg'>
                       Welcome to our realm of web services where innovation meets expertise. 
                       From conceptualizing sleek UI designs to crafting dynamic static websites, and refining existing platforms, we cover it all. Our commitment extends beyond just building websites, we strive to enhance your online presence and propel your digital success. 
                       Let's collaborate to bring your vision to life in the vast landscape of the web.
                     </p> 
                     <div className='flex gap-5 text-xl'>
                       <Link to='http://localhost:5173/#contact'>
-                        <button className='bg-cyan-500 p-3 rounded-lg'>Contact Us</button>
+                        <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                     </div>
                     
                 </div>
-                <div className='sm:mr-[15vw] lg:mr-[0vw]' >
+                <div className='h-[100vw] sm:h-[50vw] md:h-[50vw] lg:h-[50vw] xl:h-[50vw] 2xl:h-[50vw]' >
                     <Spline scene='https://prod.spline.design/boK9DZzm1GfKNPIj/scene.splinecode'/> 
                 </div>
             </div>
         </div>
-      <div className='flex justify-between items-center text-white' style={{paddingInline:'10vw'}}>
+      <div className='flex justify-between items-center text-white px-[5vw]'>
         <div className='flex flex-col gap-10 relative' style={{ width: '55vw', borderTop:'none', borderBottom:'none', borderLeft:'none', borderRightWidth:'2px' }}>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-              <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><RiLightbulbFlashLine className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw]' style={{zIndex:'10'}}>
+              <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><RiLightbulbFlashLine className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               IDEAS
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('ideas')}/>
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><FaPaintBrush className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw]' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><FaPaintBrush className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               DESIGN
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('design')}/>
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><DiAptana className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw]' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><DiAptana className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               FUNCTIONALITY
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('functionality')}/> 
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan',}}><IoCloudDone className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw]' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><IoCloudDone className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               HOST
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('host')}/>
           </div>
-          <div className='flex items-center justify-between pr-20'>
-            <h1 className='md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-5' style={{zIndex:'10'}}>
-            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'5px', padding:'15px', borderColor:'cyan'}}><FaTools className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
+          <div className='flex items-center justify-between pr-[5vw]'>
+            <h1 className='text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl relative flex items-center gap-[2vw]' style={{zIndex:'10'}}>
+            <span style={{background:'#595858', borderRadius:'50%', borderWidth:'2px', padding:'2vw', borderColor:'cyan'}}><FaTools className='sm:text-4xl md:text-5xl xl:text-7xl'/></span>
               MAINTENANCE
             </h1>
             <RiArrowRightCircleFill color='cyan' className='sm:text-3xl md:text-4xl xl:text-6xl' onClick={() => handleSectionClick('maintenance')}/>
           </div>
           
-          <div className="absolute rounded-lg sm:left-8 lg:left-10 xl:left-14 top-10 bottom-20 w-2" style={{zIndex:'0', background:'linear-gradient(#5DE0E6, #038096)'}}></div>
+          <div className="absolute rounded-lg h-[90%] left-[5.5%] sm:left-[8%] lg:left-10 xl:left-14 top-5 w-2" style={{zIndex:'0', background:'linear-gradient(#5DE0E6, #038096)'}}></div>
         </div>
         <div style={{ width: '35vw', paddingLeft:'3vw'}}>
           {activeSection === 'ideas' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
               We specialize in ideation and bringing our clients' visions to life as web projects. 
               <br/><br/>
               Our focus lies in conceptualizing and implementing innovative ideas tailored specifically for web projects. 
@@ -93,7 +93,7 @@ export default function Web() {
             </p>
           )}
           {activeSection === 'design' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
               At our core, we thrive on crafting comprehensive UI designs tailored to our clients' needs. 
               <br/><br/>
               We offer full-scale UI design solutions, from conceptualizing brand-new designs from scratch to bringing our clients' specific design visions to life. 
@@ -105,7 +105,7 @@ export default function Web() {
             </p>
           )}
           {activeSection === 'functionality' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
              At the heart of our services lies the creation of functional elements for web projects. 
              <br/><br/>
              We pride ourselves on delivering comprehensive functionalities that precisely align with our clients' project requirements. 
@@ -117,7 +117,7 @@ export default function Web() {
             </p>
           )}
           {activeSection === 'host' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
              We specialize in bringing your projects to life on the internet, making them accessible to all. 
              <br/><br/>
              Our expertise lies in completing and launching projects that resonate with your audience. 
@@ -127,7 +127,7 @@ export default function Web() {
              </p>
           )}
           {activeSection === 'maintenance' && (
-            <p style={{fontSize:'1.1vw'}}>
+            <p className='text-[2vw] md:text-[1.5vw]'>
              Our maintenance services cater to the upkeep of your web presence, ensuring smooth operation and optimal performance. 
              <br/><br/>
              We handle bug fixes, implement desired changes, and maintain databases when required, ensuring your website remains responsive and functional. 
@@ -138,14 +138,14 @@ export default function Web() {
         </div>
         
       </div>
-      <div className='flex flex-col text-white gap-[5vw] px-10'>
+      <div className='flex flex-col text-white gap-[5vw] px-[3vw]'>
         <div style={{width:'55vw'}}>
-          <p style={{fontSize:'1.3vw'}}>
+          <p className='text-[2vw] md:text-[1.5vw]'>
           Are you looking to establish your online presence? We're here to make it happen. Our web development services cover a broad spectrum of website types, each tailored to meet your specific needs and aspirations. Whether you're venturing into e-commerce, seeking to showcase your personal portfolio, or aiming to establish a professional business identity, we have the expertise to bring your vision to life.
           </p>
         </div>
         <div style={{width:'65vw'}} className='self-end text-end'>
-          <p style={{fontSize:'1.3vw'}}>
+          <p className='text-[2vw] md:text-[1.5vw]'>
           Design isn't just about visuals – it's about creating experiences that resonate deeply with your audience. We understand the pivotal role design plays in shaping your online presence and the lasting impression it leaves on your visitors.
           <br/><br/>
           But what sets us apart is our commitment to design excellence. 
@@ -157,15 +157,15 @@ export default function Web() {
           Yet, we also understand the power of innovation. That's why we're not afraid to push the boundaries of design with bold animations and interactive elements. These are the sites that captivate and astound, leaving visitors breathless with anticipation and wonder.
           </p>
         </div>
-        <div style={{width:'80vw', paddingTop:'8vh', fontSize:'1.5vw'}} className='self-center text-center'>
+        <div style={{width:'90vw', paddingTop:'8vh'}} className='self-center text-center self-center text-center text-xs md:text-[1.5vw]'>
           <p >
             Our commitment is to craft websites that not only reflect your vision but also engage and delight your visitors. With attention to detail and a keen eye for design trends, we create websites that stand out in today's digital landscape. Let us help you make your mark online with a website that speaks volumes and sets you apart from the competition.
           </p>
         </div>
         
       </div>
-      <div className='flex flex-col items-center justify-center text-white pb-10' style={{background: 'transparent', paddingInline:'2vw'}}>
-        <h1 style={{marginBottom:'10vh', fontSize:'6vw'}}>Samples Of Design</h1>
+      <div className='flex flex-col items-center justify-center text-white pb-[2vw] mt-[10vw]' style={{background: 'transparent', paddingInline:'2vw'}}>
+        <h1 style={{marginBottom:'10vw', fontSize:'6vw'}}>Samples Of Design</h1>
           <div className='flex ' style={{gap:'1vw'}}>
             <div className='flex flex-col ' style={{gap:'1vw'}}>
               <div className='flex ' style={{gap:'1vw'}}>
@@ -184,7 +184,7 @@ export default function Web() {
             </div>
           </div>
           <div className='flex flex-col ' style={{gap:'1vw'}}>
-            <img src='images/webSample6.png' style={{height: '19vw' }} className='rounded-3xl'/>
+            <img src='images/webSample6.png' style={{width: '32vw', borderRadius:'1vw' }} className='rounded-3xl'/>
             <div className='flex ' style={{gap:'1vw'}}>
               <img src='images/webSample4.png' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
               <img src='images/webSample5.jpeg' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
@@ -197,7 +197,7 @@ export default function Web() {
         </div>
       </div>
       <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>
-          <button className='bg-cyan-500 p-3 text-3xl rounded-lg'>Contact Us</button>
+          <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       <Footer/>
     </div>

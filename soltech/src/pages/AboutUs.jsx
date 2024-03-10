@@ -35,14 +35,14 @@ export default function AboutUs() {
     <div className='flex flex-col' style={{background:'#181818'}}>
         <div className='flex flex-col' style={{ background: 'url(/images/aboutUsBg.jpeg) center',height:'53vw', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom',}}>
             <NavBar/>
-            <h1 className='text-white self-center text-5xl md:text-6xl lg:text-6xl xl:text-8xl pt-5' style={{ background: 'linear-gradient(to left, #5170FF, cyan)',WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>WAREPIX Solutions</h1>
-            <p className='text-white self-center pt-5 sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl'>Express Yourself Differently</p>
-            <div className='self-start flex pt-5 lg:pt-10 xl:pt-20'>
+            <h1 className='text-center text-2xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-8xl' style={{ background: 'linear-gradient(to left, #5170FF, cyan)',WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>WAREPIX Solutions</h1>
+            <p className='text-white self-center pt-[2vw] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl'>Express Yourself Differently</p>
+            <div className='self-start flex pt-[2vw] lg:pt-10 xl:pt-20'>
                 <div className='flex flex-col' style={{width:'13vw', gap:'2vw'}}>
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{padding:'0.7vw',background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'15vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <IoPeople style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Happy Clients</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Happy Clients</p>
                         </div>
                         <div>
                             <h1 className='aboutHText rounded-3xl text-center text-cyan-300' style={{fontSize:'2vw'}}>500+</h1>
@@ -51,7 +51,7 @@ export default function AboutUs() {
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'22vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <GiProgression style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Projects Created</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Projects Created</p>
                         </div>
                         <div>
                            <h1 className='aboutHText rounded-3xl text-center text-cyan-300' style={{fontSize:'2vw'}}>850+</h1> 
@@ -61,7 +61,7 @@ export default function AboutUs() {
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{height:'4vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'29vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaMoneyBillTrendUp style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Flexible Price</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Flexible Price</p>
                         </div>
                         {/* <h1 className='aboutHText rounded-3xl text-center text-cyan-300' style={{fontSize:'2vw'}}>Pojasnjenje</h1> */}
                     </div>
@@ -70,21 +70,21 @@ export default function AboutUs() {
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'60vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaPeopleGroup style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Members of a team</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Members of a team</p>
                         </div>
                         <h1 className='aboutHText rounded-3xl text-center text-cyan-300' style={{fontSize:'2vw'}}>53</h1>
                     </div>
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'53vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <AiOutlineFieldTime style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Working Hours</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Working Hours</p>
                         </div>
                         <h1 className='aboutHText rounded-3xl text-center text-cyan-300' style={{fontSize:'2vw'}}>24/7</h1>
                     </div>
                     <div className='rounded-3xl flex flex-col items-center justify-center' style={{height:'4vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', position:'relative', left:'46vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaTeamspeak style={{fontSize:'2vw'}} color='white'/>
-                            <p className='text-white rounded-3xl aboutPText'>Constant Dialog</p>
+                            <p className='text-white rounded-3xl text-[2vw] md:text-[1.5vw]'>Constant Dialog</p>
                         </div>
                         {/* <h1 className='aboutHText rounded-3xl text-center text-cyan-300 text-2xl'>Pojasnjenje</h1> */}
                     </div>
