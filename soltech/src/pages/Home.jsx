@@ -37,6 +37,13 @@ export default function Home() {
 
   const roomRef = useRef();
 
+  const [selectedImage, setSelectedImage] = useState(null);
+  
+  const handleImageClick = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+
   useEffect(() => {
     if (hash === "#portfolio" && portfolioRef.current) {
       portfolioRef.current.scrollIntoView({ behavior: "smooth" });
@@ -144,7 +151,7 @@ export default function Home() {
                 to elevate your brand's unique identity
               </p>
             </div>
-            <div className='h-[60vw] sm:w-[30%] sm:h-[30vw]'>
+            <div className='h-[60vw] self-center w-[60%] sm:w-[30%] sm:h-[30vw]'>
               <Canvas>
                 <ambientLight /> 
                 <OrbitControls
@@ -345,6 +352,7 @@ export default function Home() {
                         {imageGroup.map((image, imageIndex) => (
                           <div
                             key={imageIndex}
+                            onClick={() => handleImageClick(image)}
                             style={{
                               background: `url(${image}) center no-repeat`,
                               backgroundSize: "cover",
@@ -361,6 +369,7 @@ export default function Home() {
                 webImageContainer.map((image, index) => (
                   <SwiperSlide key={index}>
                     <div
+                      onClick={() => handleImageClick(image)}
                       style={{
                         background: `url(${image}) center no-repeat`,
                         backgroundSize: "cover",
@@ -400,6 +409,7 @@ export default function Home() {
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
+                          onClick={() => handleImageClick(image)}
                           style={{
                             background: `url(${image}) center no-repeat`,
                             backgroundSize: "cover",
@@ -447,6 +457,7 @@ export default function Home() {
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
+                          onClick={() => handleImageClick(image)}
                           style={{
                             background: `url(${image}) center no-repeat`,
                             backgroundSize: "cover",
@@ -490,7 +501,13 @@ export default function Home() {
           </Canvas>
         </div>
       </div>
-      
+      {selectedImage && (
+              <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-80" onClick={() => setSelectedImage(null)}>
+                <div className="flex items-center justify-center mx-auto p-6 rounded-lg" onClick={(e) => e.stopPropagation()}>
+                  <img src={selectedImage} alt="Selected Image" className="self-center w-[45vh]" />
+                </div>
+              </div>
+            )}
       <div style={{ background: "linear-gradient(to bottom, black, #0463A8" }}>
         <div
           ref={contactRef}

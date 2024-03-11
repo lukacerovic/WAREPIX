@@ -3,8 +3,7 @@ import Spline from '@splinetool/react-spline';
 import { FaPaintBrush, FaTools } from "react-icons/fa";
 import { RiArrowRightCircleFill, RiLightbulbFlashLine } from "react-icons/ri";
 import { IoCloudDone } from "react-icons/io5";
-import { DiAndroid, DiApple, DiAptana } from "react-icons/di";
-import { MdOutlineReadMore } from "react-icons/md";
+import { DiAptana } from "react-icons/di";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -12,6 +11,11 @@ import Preloader from '../components/Preloader';
 
 export default function Web() {
   const [activeSection, setActiveSection] = useState('ideas');
+  const [selectedImage, setSelectedImage] = useState(null);
+  
+  const handleImageClick = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
 
   const handleSectionClick = (section) => {
     setActiveSection(section);
@@ -172,30 +176,37 @@ export default function Web() {
             <div className='flex flex-col ' style={{gap:'1vw'}}>
               <div className='flex ' style={{gap:'1vw'}}>
                 <div>
-                  <img src='images/webSample3.png' style={{borderRadius:'1vw',width: '45vw' }} className='rounded-3xl'/>
+                  <img src='images/webSample3.png' onClick={() => handleImageClick('images/webSample3.png')} style={{borderRadius:'1vw',width: '45vw' }} className='rounded-3xl'/>
                 </div>
               <div className='flex flex-col ' style={{gap:'1vw'}}>
-                <img src='images/webSample1.jpeg' style={{borderRadius:'1vw',width: '20vw' }} className='rounded-3xl'/>
-                <img src='images/webSample2.jpeg' style={{borderRadius:'1vw',width: '20vw' }} className='rounded-3xl'/>
+                <img src='images/webSample1.jpeg' onClick={() => handleImageClick('images/webSample1.jpeg')} style={{borderRadius:'1vw',width: '20vw' }} className='rounded-3xl'/>
+                <img src='images/webSample2.jpeg' onClick={() => handleImageClick('images/webSample2.jpeg')} style={{borderRadius:'1vw',width: '20vw' }} className='rounded-3xl'/>
               </div>
             </div>
             <div className='flex ' style={{gap:'1vw'}}>
-              <img src='images/webSample7.jpeg' style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
-              <img src='images/webSample8.jpeg' style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
-              <img src='images/webSample9.png' style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
+              <img src='images/webSample7.jpeg' onClick={() => handleImageClick('images/webSample7.jpeg')} style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
+              <img src='images/webSample8.jpeg' onClick={() => handleImageClick('images/webSample8.jpeg')} style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
+              <img src='images/webSample9.png' onClick={() => handleImageClick('images/webSample9.png')} style={{borderRadius:'1vw',width: '20.3vw' }} className='rounded-3xl'/>
             </div>
           </div>
           <div className='flex flex-col ' style={{gap:'1vw'}}>
-            <img src='images/webSample6.png' style={{width: '32vw', borderRadius:'1vw' }} className='rounded-3xl'/>
+            <img src='images/webSample6.png' onClick={() => handleImageClick('images/webSample6.png')} style={{width: '32vw', borderRadius:'1vw' }} className='rounded-3xl'/>
             <div className='flex ' style={{gap:'1vw'}}>
-              <img src='images/webSample4.png' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
-              <img src='images/webSample5.jpeg' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
+              <img src='images/webSample4.png' onClick={() => handleImageClick('images/webSample4.png')} style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
+              <img src='images/webSample5.jpeg' onClick={() => handleImageClick('images/webSample5.jpeg')} style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
             </div>
             <div className='flex ' style={{gap:'1vw'}}>
-              <img src='images/webSample11.jpeg' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
-              <img src='images/webSample10.jpeg' style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
+              <img src='images/webSample11.jpeg' onClick={() => handleImageClick('images/webSample11.jpeg')} style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
+              <img src='images/webSample10.jpeg' onClick={() => handleImageClick('images/webSample10.jpeg')} style={{borderRadius:'1vw',width: '15vw' }} className='rounded-3xl'/>
             </div>
           </div>
+          {selectedImage && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80" onClick={() => setSelectedImage(null)}>
+              <div className="flex items-center justify-center max-w-4xl mx-auto p-6 rounded-lg" onClick={(e) => e.stopPropagation()}>
+                <img src={selectedImage} alt="Selected Image" className="w-[80%] self-center" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>

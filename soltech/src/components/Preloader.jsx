@@ -13,7 +13,7 @@ export default function Preloader() {
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center transition-opacity duration-200 bg-black"
+      className="fixed z-50 inset-0 flex items-center justify-center transition-opacity duration-200 bg-black"
       style={{ opacity: loading ? 1 : 0, pointerEvents: loading ? 'auto' : 'none' }}
     >
       <div className="w-48 h-48 relative">

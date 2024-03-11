@@ -21,27 +21,27 @@ export default function NavBar() {
         <div className='text-white flex self-center justify-between' style={{ gap: '2vw' }}>
           <div>
             <Link to='https://www.warepix.com/#portfolio'>
-              <h1 className='text-xl'>Portfolio</h1>
+              <h1 className='text-xl xl:text-4xl'>Portfolio</h1>
             </Link>
           </div>
           <div>
             <Link to='https://www.warepix.com/#services'>
-              <h1 className='text-xl'>Services</h1>
+              <h1 className='text-xl xl:text-4xl'>Services</h1>
             </Link>
           </div>
           <div>
             <Link to='https://www.warepix.com/about'>
-              <h1 className='text-xl'>About Us</h1>
+              <h1 className='text-xl xl:text-4xl'>About Us</h1>
             </Link>
           </div>
           <div>
             <Link to='https://www.warepix.com/work-details'>
-              <h1 className='text-xl'>How We Work</h1>
+              <h1 className='text-xl xl:text-4xl'>How We Work</h1>
             </Link>
           </div>
           <div>
             <Link to='https://www.warepix.com/#contact'>
-              <h1 className='text-xl'>Contact</h1>
+              <h1 className='text-xl xl:text-4xl'>Contact</h1>
             </Link>
           </div>
         </div>
