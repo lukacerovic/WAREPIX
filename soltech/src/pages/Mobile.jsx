@@ -7,6 +7,7 @@ import { DiAndroid, DiApple, DiAptana } from "react-icons/di";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Preloader from '../components/Preloader';
 
 export default function Mobile() {
   const [activeSection, setActiveSection] = useState('ideas');
@@ -17,6 +18,7 @@ export default function Mobile() {
   return (
     // linear-gradient(to bottom, black, #595858) za root div
     <div className='flex flex-col'style={{gap:'8vw', background:'linear-gradient(to bottom, black, #595858)'}}>
+      <Preloader/>
       <NavBar/>
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
