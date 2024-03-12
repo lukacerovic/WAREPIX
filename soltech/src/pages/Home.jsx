@@ -504,7 +504,7 @@ export default function Home() {
       {selectedImage && (
               <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-80" onClick={() => setSelectedImage(null)}>
                 <div className="flex items-center justify-center mx-auto p-6 rounded-lg" onClick={(e) => e.stopPropagation()}>
-                  <img src={selectedImage} alt="Selected Image" className="self-center w-[45vh]" />
+                  <img src={selectedImage} alt="Selected Image" style={{maxHeight: '80vh', maxWidth: '80%'}} className="self-center" />
                 </div>
               </div>
             )}
