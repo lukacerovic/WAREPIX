@@ -510,7 +510,6 @@ export default function Home() {
             )}
       <div style={{ background: "linear-gradient(to bottom, black, #0463A8" }}>
         <div
-          ref={contactRef}
           style={{ paddingInline: "8vw", marginBottom: "20vh" }}
         >
           <h1
@@ -519,7 +518,7 @@ export default function Home() {
           >
             Contact Us
           </h1>
-          <div className="flex justify-between items-center">
+          <div ref={contactRef} className="flex justify-between items-center">
             <div style={{ width: "60%", color:'white' }} className='text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
               <p>
                 Contact us for any service you need, and let's explore the
