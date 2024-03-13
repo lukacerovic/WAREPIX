@@ -30,7 +30,7 @@ export default function MVP() {
                     WAREPIX offers premier MVP (Minimum Viable Product) development service to swiftly transform your business ideas from concepts to reality. Our dedicated team of technology and design experts is committed to providing efficient solutions that enable rapid market entry and crucial feedback gathering.
                     </p> 
                     <div className='flex gap-5 text-xl'>
-                      <Link to='http://localhost:5173/#contact'>
+                      <Link to='https://www.warepix.com/#contact'>
                         <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                         
@@ -157,7 +157,7 @@ export default function MVP() {
         <p className='text-center text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl self-center' style={{width:'90vw', marginTop:'5vw'}}>
             Overall, WAREPIX's expertise and support in MVP development empower businesses to minimize risk, maximize learning, and accelerate their path to market success.  
         </p>
-        <Link className='self-center' style={{marginTop:'5vw'}} to='http://localhost:5173/#contact'>
+        <Link className='self-center' style={{marginTop:'5vw'}} to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       </div>

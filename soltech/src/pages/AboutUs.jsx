@@ -406,7 +406,7 @@ At WAREPIX, we believe in the power of collaboration and innovation. We take pri
 Experience the difference with WAREPIX. Let us be your trusted partner in the digital world.
             </p>
         </div>
-        <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>
+        <Link className='self-center pt-20 pb-10' to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg' style={{ paddingInline:'1.5vw', paddingTop:'1vw', paddingBottom:'1vw'}}>Contact Us</button>
         </Link>
         <Footer/>

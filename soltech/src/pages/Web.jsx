@@ -35,7 +35,7 @@ export default function Web() {
                       Let's collaborate to bring your vision to life in the vast landscape of the web.
                     </p> 
                     <div className='flex gap-5 text-xl'>
-                      <Link to='http://localhost:5173/#contact'>
+                      <Link to='https://www.warepix.com/#contact'>
                         <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                     </div>
@@ -209,7 +209,7 @@ export default function Web() {
           )}
         </div>
       </div>
-      <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>
+      <Link className='self-center pt-20 pb-10' to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       <Footer/>

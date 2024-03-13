@@ -30,7 +30,7 @@ export default function MVP() {
                     Welcome to our animation services! At WAREPIX, we specialize in creating captivating animations that bring your ideas to life. Whether you need 2D or 3D animation for entertainment, education, marketing, or any other purpose, we've got you covered. Our team of skilled animators is dedicated to delivering top-notch animations tailored to your specific needs and requirements.
                     </p> 
                     <div className='flex gap-5'>
-                      <Link to='http://localhost:5173/#contact'>
+                      <Link to='https://www.warepix.com/#contact'>
                         <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                         
@@ -113,7 +113,7 @@ export default function MVP() {
       </div>
       <div className='text-white flex flex-col' style={{background: 'transparent'}}>
         <Spline scene='https://prod.spline.design/vcti8sPD7V7VCjiS/scene.splinecode'/>
-        <Link className='self-center pt-10' to='http://localhost:5173/#contact'>
+        <Link className='self-center pt-10' to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg mt-[10vw]'>Contact Us</button>
         </Link>
       </div>

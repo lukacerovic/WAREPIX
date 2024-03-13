@@ -33,7 +33,7 @@ export default function Logo() {
                       Elevate your brand identity with our bespoke logo design service. At the intersection of artistry and strategy, we craft logos that resonate with your audience and stand the test of time. Our team of visionary designers meticulously shapes each element, capturing the essence of your brand in every curve and color. Let your logo be more than just a symbol – let it be the emblem of your story, the cornerstone of your success.
                     </p> 
                     <div className='flex gap-5 text-xl'>
-                      <Link to='http://localhost:5173/#contact'>
+                      <Link to='https://www.warepix.com/#contact'>
                         <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                     </div>
@@ -147,7 +147,7 @@ export default function Logo() {
             )}
           </div>
       </div>
-      <Link className='self-center pt-20 pb-10' to='http://localhost:5173/#contact'>
+      <Link className='self-center pt-20 pb-10' to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       <Footer/>

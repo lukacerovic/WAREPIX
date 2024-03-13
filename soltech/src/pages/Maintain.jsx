@@ -30,7 +30,7 @@ export default function Maintain() {
                     At WAREPIX, we specialize in providing maintenance and repair services for web and mobile application projects, as well as general application maintenance and consultations. Our team is dedicated to ensuring the smooth operation and longevity of your digital solutions.
                     </p> 
                     <div className='flex gap-5 text-xl'>
-                      <Link to='http://localhost:5173/#contact'>
+                      <Link to='https://www.warepix.com/#contact'>
                         <button className='bg-cyan-500 p-3 rounded-lg text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>Contact Us</button>
                       </Link>
                         
@@ -128,7 +128,7 @@ Our dedicated technical support team is available to address your inquiries and 
 
 By partnering with WAREPIX for your maintenance needs, you can rest assured that your digital assets are in capable hands. We're committed to delivering exceptional service and ensuring the long-term success of your digital initiatives. Let WAREPIX be your trusted partner in maintaining and optimizing your digital presence.
         </p>
-        <Link className='self-center' style={{marginTop:'15vw'}} to='http://localhost:5173/#contact'>
+        <Link className='self-center' style={{marginTop:'15vw'}} to='https://www.warepix.com/#contact'>
           <button className='bg-cyan-500 p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-lg'>Contact Us</button>
         </Link>
       </div>
