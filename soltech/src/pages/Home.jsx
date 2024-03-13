@@ -514,7 +514,7 @@ export default function Home() {
         >
           <h1
             style={{ color: "#5271FF"}}
-            className="uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl my-[8vw]"
+            className="uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-8xl my-[8vw]"
           >
             Contact Us
           </h1>
@@ -538,7 +538,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1 style={{ width: "90%", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>
+            <h1 style={{ width: "90%", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl'>
               Your ideal digital solution is just a conversation away.
             </h1>
             <span className="flex items-center text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
@@ -552,7 +552,7 @@ export default function Home() {
             type="button"
             onClick={() => handleSectionClick("form")}
             style={{ marginTop: "5vh", padding:'1vw', marginBottom:'2vw' }}
-            className="bg-pink-500 text-white rounded-lg text-md sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+            className="bg-pink-500 text-white rounded-lg text-md sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl"
           >
             Contact Us Directly
           </button>
