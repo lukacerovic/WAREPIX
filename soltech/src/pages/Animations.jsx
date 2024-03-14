@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline';
 import { FaOptinMonster } from "react-icons/fa";
 import { TfiThought } from "react-icons/tfi";
@@ -13,6 +13,10 @@ import Preloader from '../components/Preloader';
 
 export default function MVP() {
   const [activeSection, setActiveSection] = useState('story');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSectionClick = (section) => {
     setActiveSection(section);

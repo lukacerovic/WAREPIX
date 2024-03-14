@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline';
 import { RiArrowRightCircleFill } from "react-icons/ri";
 import { GrOptimize } from "react-icons/gr";
@@ -13,6 +13,10 @@ import Preloader from '../components/Preloader';
 
 export default function Maintain() {
   const [activeSection, setActiveSection] = useState('bug');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSectionClick = (section) => {
     setActiveSection(section);

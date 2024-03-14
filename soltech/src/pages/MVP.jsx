@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline';
 import { FaRobot } from "react-icons/fa";
 import { RiArrowRightCircleFill, RiLightbulbFlashLine } from "react-icons/ri";
@@ -13,6 +13,10 @@ import Preloader from '../components/Preloader';
 
 export default function MVP() {
   const [activeSection, setActiveSection] = useState('ideation');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSectionClick = (section) => {
     setActiveSection(section);

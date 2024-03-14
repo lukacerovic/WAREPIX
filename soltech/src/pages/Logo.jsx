@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline';
 import { FaPaintBrush, FaTools } from "react-icons/fa";
 import { RiArrowRightCircleFill, RiLightbulbFlashLine } from "react-icons/ri";
@@ -16,6 +16,10 @@ export default function Logo() {
   const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSectionClick = (section) => {
     setActiveSection(section);
