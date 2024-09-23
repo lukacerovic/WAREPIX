@@ -66,7 +66,7 @@ export default function Footer() {
           
         </div>
         <div className='self-center pb-10'>
-          <h2 className='text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>warepixsolutions@gmail.com</h2>   
+          <h2 className='text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>info@warepix.com</h2>   
         </div>
         
     </div>
