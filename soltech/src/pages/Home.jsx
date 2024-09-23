@@ -544,7 +544,7 @@ export default function Home() {
             <span className="flex items-center text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
               <MdOutlineMail color="white" size={60} />
               <p className="text-white">
-                warepixsolutions@gmail.com
+                info@warepix.com
               </p>
             </span>
           </div>
