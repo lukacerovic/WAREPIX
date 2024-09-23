@@ -17,7 +17,7 @@ export const sendMessage = async (req, res) => {
     try {
         const msg = {
             
-            to: 'warepixsolutions@gmail.com',
+            to: 'info@warepix.com',
             from: 'soltechsolutions.dev@gmail.com',
             subject: subject,
             html: `<h1>Dobio si poruku od: <span color:'cyan'>${username}</span></h1>
