@@ -110,7 +110,7 @@ export default function Home() {
     setReviewMessage(true);
     setActiveSection("");
     try {
-      const res = await fetch("https://warepix-ajtyjh7xr-lukacerovics-projects.vercel.app/api/message/send", {
+      const res = await fetch("https://www.warepix.com/api/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
