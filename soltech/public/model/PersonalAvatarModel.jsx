@@ -15,30 +15,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/model/personalAvatarModel.gltf");
   const animateModel = useRef();
-  // console.log(
-  //   props.textAnimate[0].current,
-  //   props.textAnimate[1].current,
-  //   props.textAnimate[2].current
-  // );
+  
   useGSAP(() => {
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: props.element.current,
-    //       start: "top center",
-    //       end: "bottom center",
-    //       scrub: true,
-    //
-    //     },
-    //   })
-    // .to(
-    //   animateModel.current.rotation,
-    //   {
-    //     y: 0.8,
-    //     duration: 1,
-    //   },
-    //   "start"
-    // )
     let tl = gsap
       .timeline({
         scrollTrigger: {

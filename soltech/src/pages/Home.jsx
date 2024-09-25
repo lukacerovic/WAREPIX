@@ -101,8 +101,8 @@ export default function Home() {
   ];
   const handleChange = (e) => {
     setFormData({
-      ...formData, // spred operatior da prati promene svih polja i da ih pamti cak i kada nisu u fokusu
-      [e.target.id]: e.target.value, // preko id pratimo svaki input i dodeljujemo mu vrednost
+      ...formData, 
+      [e.target.id]: e.target.value, 
     });
   };
   const handleSendForm = async (e) => {
