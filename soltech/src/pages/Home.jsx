@@ -110,7 +110,7 @@ export default function Home() {
     setReviewMessage(true);
     setActiveSection("");
     try {
-      const res = await fetch("https://www.warepix.com/api/messages", {
+      const res = await fetch("/api/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -118,10 +118,15 @@ export default function Home() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+      if (res.status === 200) {
+        console.log('Message sent successfully:', data.message);
+      } else {
+        console.error('Failed to send message:', data.error);
+      }
     } catch (error) {
-      console.log(error.message);
+      console.log('Error:', error.message);
     }
-  };
+};
 
   return (
     <div className="flex flex-col">
@@ -548,8 +553,70 @@ export default function Home() {
               </p>
             </span>
           </div>
-          
+          <button
+            type="button"
+            onClick={() => handleSectionClick("form")}
+            style={{ marginTop: "5vh", padding:'1vw', marginBottom:'2vw' }}
+            className="bg-pink-500 text-white rounded-lg text-md sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl"
+          >
+            Contact Us Directly
+          </button>
+          {activeSection === "form" && (
+            <form
+              onSubmit={handleSendForm}
+              style={{ width: "80%", gap:'1vw'}}
+              className="flex flex-col text-xs sm:text-xl  md:text-2xl lg:text-3xl xl:text-4xl"
+            >
+              <input
+                className="p-3 rounded-lg"
+                style={{ background: "#f0f8ff " }}
+                type="text"
+                placeholder="Full Name"
+                id="username"
+                onChange={handleChange}
+              />
+              <input
+                className="p-3 rounded-lg"
+                style={{ background: "#f0f8ff " }}
+                type="email"
+                placeholder="Email"
+                id="email"
+                onChange={handleChange}
+              />
+              <input
+                className="p-3 rounded-lg"
+                style={{ background: "#f0f8ff " }}
+                type="text"
+                placeholder="Type Of Service"
+                id="subject"
+                onChange={handleChange}
+              />
+              <textarea
+                className="p-3 h-60 rounded-lg"
+                style={{ background: "#f0f8ff " }}
+                type="text"
+                placeholder="Describe what you need"
+                id="message"
+                onChange={handleChange}
+              />
+              <button className="w-full bg-green-500 text-center rounded-lg text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase" style={{padding:'0.7vw'}}>
+                Send Message
+              </button>
+            </form>
+          )}
         </div>
+        {reviewMessage && (
+                    <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 z-50">
+                        <div className="rounded-lg flex flex-col text-white" style={{padding:'5vw',width:'70%', backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(images/soltechLogo.png)`, backgroundSize: 'cover', backgroundPosition: 'center',}}>
+                            <p className='self-center bg-transparent flex' style={{fontSize:'2vw', paddingBottom:'3vw'}} >Thank you, {formData.username} for your message</p>
+                            <p style={{fontSize:'3vw'}} className='text-center'>Your message has been sent</p>
+                            <p style={{fontSize:'3vw'}} className='text-center'>Successfully!</p>
+                            <p style={{fontSize:'2vw', paddingTop:'2vw'}} className='text-center'>Our team is dedicated to providing prompt assistance and will review your request carefully. Expect to hear back from us shortly. If you have any urgent inquiries, please don't hesitate to contact us directly. We appreciate your interest in our services!</p>
+                            <IoMdCloudDone size={'7vw'} color='#32cd32' className='self-center'/>
+                            <button className="bg-cyan-400 text-white rounded-md" style={{fontSize:'2vw', marginTop:'5vw', padding:'1vw'}} onClick={() => setReviewMessage(false)}>Close</button>
+                        </div>
+                    </div>
+                )}
         <Footer />
       </div>
     </div>
