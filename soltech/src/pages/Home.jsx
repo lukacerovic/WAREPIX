@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { useState, useEffect, useRef, Suspense } from "react";
-import Spline from "@splinetool/react-spline";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
@@ -17,9 +16,12 @@ import Room from "../../public/model/Room";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { IoMdCloudDone } from "react-icons/io";
+
+import emailjs from "emailjs-com";
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -105,28 +107,27 @@ export default function Home() {
       [e.target.id]: e.target.value, 
     });
   };
-  const handleSendForm = async (e) => {
+
+  const handleSendForm = (e) => {
     e.preventDefault();
     setReviewMessage(true);
     setActiveSection("");
-    try {
-      const res = await fetch("/api/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (res.status === 200) {
-        console.log('Message sent successfully:', data.message);
-      } else {
-        console.error('Failed to send message:', data.error);
-      }
-    } catch (error) {
-      console.log('Error:', error.message);
-    }
-};
+
+    const { username, email, subject, message } = formData;
+    
+    emailjs.send("service_lg9iqwy", "template_330t5pp", {
+      from_name: username,
+      from_email: email,
+      subject: subject || "New Message from Contact Form",
+      message: message,
+    }, "8OcK59D0LNEiWdKwU")
+    .then((response) => {
+      console.log("Email sent successfully!", response.status, response.text);
+    }, (error) => {
+      console.error("Error sending email:", error);
+    });
+  };
+  
 
   return (
     <div className="flex flex-col">
