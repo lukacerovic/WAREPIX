@@ -475,7 +475,7 @@ export default function Home() {
             type="button"
             onClick={() => handleSectionClick("form")}
             style={{ marginTop: "5vh", padding:'1vw', marginBottom:'2vw' }}
-            className="bg-pink-500 text-white rounded-lg text-md sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl"
+            className="bg-pink-500 text-white rounded-lg text-md sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl"
           >
             Contact Us Directly
           </button>
