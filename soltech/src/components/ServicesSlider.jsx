@@ -10,7 +10,7 @@ const ServicesSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div style={{ margin: "auto" }} className="w-[85%] md:w-[80%] h-[20vh] sm:h-[30vh] md:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
+    <div style={{ margin: "auto" }} className="w-[98%] md:w-[80%] h-[20vh] sm:h-[30vh] md:h-[40vh] lg:h-[60vh] xl:h-[70vh]">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -38,7 +38,7 @@ const ServicesSlider = () => {
         navigation={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper h-[100vh] mt-[-18vw] md:h-[70vw] md:mt-[-10vw]"
+        className="mySwiper h-[200vw] mt-[-40vw] md:h-[70vw] md:mt-[-10vw]"
       >
         {services.map((service, index) => (
           <SwiperSlide
@@ -50,22 +50,10 @@ const ServicesSlider = () => {
               alignItems: "flex-start",
               justifyContent: "flex-start",
               color: "white",
-              position: "relative",
             }}
             className="swiperCard h-[115vw] md:h-[55vw]" 
           >
             <img src={`images/ServicesCards/service${index + 1}.png`} />
-            {/* <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-              <h1 style={service.titleStyle}>{service.title}</h1>
-              {service.image1 && (
-                <img src={service.image1} style={service.image1Style} />
-              )}
-              {service.paragrafs.map((paragraf, i) => (
-                <p key={i} className="text-[2.5vw] sm:text-s md:text-md lg:text-lg xl:text-xl">{paragraf}</p>
-              ))}
-              <img src={service.image2} style={service.image2Style} />
-            </div> */}
-
             {activeIndex === index && (
               <Link
                 to={`${service.link}`}
@@ -75,14 +63,12 @@ const ServicesSlider = () => {
                 }}
               >
                 <button
-                  className="rounded-lg text-md sm:text-lg md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl"
+                  className="rounded-md mt-[5vw] md:mt-[2vw] text-lg sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl"
                   style={{
                     width: "100%",
-                    borderWidth: "1px",
-                    boxShadow: "0 10px 20px rgba(200, 200, 200, 0.8)",
+                    boxShadow: "0 10px 20px rgba(0, 0, 0, 0.8)",
                     background: "#100f0f",
                     padding: "1vw",
-                    marginTop: "1vw",
                   }}
                 >
                   Explore Service
@@ -97,3 +83,4 @@ const ServicesSlider = () => {
 };
 
 export default ServicesSlider;
+
