@@ -437,12 +437,12 @@ export default function Home() {
         >
           <h1
             style={{ color: "#5271FF"}}
-            className="uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-8xl my-[8vw]"
+            className="uppercase text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-7xl my-[8vw]"
           >
             Contact Us
           </h1>
           <div ref={contactRef} className="flex justify-between items-center">
-            <div style={{ width: "60%", color:'white' }} className='text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
+            <div style={{ width: "60%", color:'white' }} className='text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl'>
               <p>
                 Contact us for any service you need, and let's explore the
                 perfect solution for your requirements together.
@@ -464,7 +464,7 @@ export default function Home() {
             <h1 style={{ width: "50%", color: "#5271FF", marginTop:'5vw', marginBottom:'8vw'}} className='text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl'>
               Your ideal digital solution is just a conversation away.
             </h1>
-            <span className="flex items-center text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
+            <span className="flex items-center text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl" style={{marginTop:'2vw', marginBottom:'1.5vw'}}>
               <MdOutlineMail color="white" size={60} />
               <p className="text-white">
                 info@warepix.com
