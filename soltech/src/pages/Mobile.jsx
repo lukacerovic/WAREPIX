@@ -32,8 +32,8 @@ export default function Mobile() {
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-10' style={{width:'75vw'}}>
-                    <h1 className='uppercase text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl'>Mobile<br/> Excellence</h1>
-                    <p className='text-xs w-[110%] sm:text-lg md:text-xl lg:text-2xl lg:w-[100%] xl:text-2xl'>
+                    <h1 className='uppercase text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl'>Mobile<br/> Excellence</h1>
+                    <p className='text-md w-[120%] sm:text-lg md:text-xl lg:text-2xl lg:w-[100%] xl:text-2xl'>
                       Discover the Future - We specialize in crafting cutting-edge mobile applications tailored to your needs. <br/><br/>
                       From Android and iOS to cross-platform solutions, we bring your ideas to life on every device. Our team combines innovation and expertise to deliver seamless experiences that captivate and engage users. <br/><br/>
                       Whether you're launching a startup or expanding your enterprise, let us propel your mobile presence into the modern, digital age.
@@ -146,3 +146,4 @@ export default function Mobile() {
     
   )
 }
+
