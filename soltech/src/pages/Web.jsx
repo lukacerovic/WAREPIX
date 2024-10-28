@@ -45,8 +45,8 @@ export default function Web() {
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center justify-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-[2vw]' style={{width:'70vw'}}>
-                    <h1 className='uppercase text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl'>Gain Your <br/> Web Identity</h1>
-                    <p className='text-xs w-[110%] sm:text-lg md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
+                    <h1 className='uppercase text-4xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl'>Gain Your <br/> Web Identity</h1>
+                    <p className='text-md w-[110%] sm:text-lg md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
                       Welcome to our realm of web services where innovation meets expertise. <br/><br/>
                       From conceptualizing sleek UI designs to crafting dynamic static websites, and refining existing platforms, we cover it all. Our commitment extends beyond just building websites, we strive to enhance your online presence and propel your digital success. 
                       Let's collaborate to bring your vision to life in the vast landscape of the web.
