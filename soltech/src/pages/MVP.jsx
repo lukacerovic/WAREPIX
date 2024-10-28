@@ -21,8 +21,8 @@ export default function MVP() {
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-[2vw]' style={{width:'75vw'}}>
-                    <h1 className='uppercase text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl'>Skyrocket <br/>Your MVP</h1>
-                    <p className='text-xs w-[110%] sm:text-lg md:text-xl lg:text-2xl lg:w-[90%] xl:text-2xl'>
+                    <h1 className='uppercase text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl'>Skyrocket <br/>Your MVP</h1>
+                    <p className='text-md w-[120%] sm:text-xl md:text-xl lg:text-2xl lg:w-[90%] xl:text-2xl'>
                     WAREPIX offers premier MVP (Minimum Viable Product) development service to swiftly transform your business ideas from concepts to reality. <br/><br/>
                     Our dedicated team of technology and design experts is committed to providing efficient solutions that enable rapid market entry and crucial feedback gathering.
                     </p> 
@@ -81,3 +81,4 @@ export default function MVP() {
     
   )
 }
+
