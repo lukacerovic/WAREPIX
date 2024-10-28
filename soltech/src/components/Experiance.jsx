@@ -40,24 +40,16 @@ const textVariant = (delay) => {
         contentArrowStyle={{ borderRight: "7px solid  #232631" }}
         date={experience.date}
         iconStyle={{ background: experience.iconBg }}
-        icon={
-          <div className='flex justify-center items-center w-full h-full'>
-            <img
-              src={experience.icon}
-              alt={experience.company_name}
-            />
-          </div>
-        }
       >
         <div>
-          <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+          <h3 className='text-white text-2xl font-bold'>{experience.title}</h3>
         </div>
   
         <ul className='mt-5 list-disc ml-5 space-y-3'>
           {experience.points.map((point, index) => (
             <li
               key={`experience-point-${index}`}
-              className='text-white-100 text-[21px] pl-1 tracking-wider py-[1vh]' 
+              className='text-white-100 text-md pl-1 tracking-wider py-[1vh]' 
             >
               {point}
             </li>
