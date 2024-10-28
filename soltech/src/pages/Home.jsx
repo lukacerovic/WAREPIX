@@ -205,6 +205,7 @@ export default function Home() {
       >
         <div
           className="flex flex-col"
+          ref={portfolioRef} 
           style={{
             paddingTop: "10vw",
             width: "100%",
@@ -230,7 +231,7 @@ export default function Home() {
                     return accumulator;
                   }, [])
                   .map((imageGroup, index) => (
-                    <SwiperSlide key={index} ref={portfolioRef} >
+                    <SwiperSlide key={index}>
                       <div className="flex gap-[3vw]">
                         {imageGroup.map((image, imageIndex) => (
                           <div
