@@ -38,7 +38,6 @@ export default function Home() {
   const logoProjects = useRef();
   const mobileProjects = useRef();
 
-  console.log(mobileProjects)
   const roomRef = useRef();
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -201,9 +200,8 @@ export default function Home() {
           background: "linear-gradient(to bottom, #595858, black)",
           paddingLeft: "4vw",
           paddingRight: "4vw",
-          gap: "20vw",
         }}
-        className="flex flex-col"
+        className="flex flex-col sm:gap-[20vw]"
       >
         <div
           className="flex flex-col"
@@ -218,7 +216,7 @@ export default function Home() {
             fontSize:'3vw'
           }}
         >
-          <h1 className="text-white text-xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl self-center uppercase">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl self-center uppercase">
             Web Projects
           </h1>
           <div style={{ width: "90vw" }}>
@@ -262,7 +260,7 @@ export default function Home() {
                         backgroundPosition: "center",
                         aspectRatio: "16 / 9",
                         width: "100%",
-                        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.8)",
+                        borderRadius: "3%",
                       }}
                     ></div>
                   </SwiperSlide>
@@ -273,15 +271,15 @@ export default function Home() {
         </div>
         <div
           ref={mobileProjects}
-          className="self-start flex flex-col text-xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          className="self-center sm:self-start flex flex-col text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
           style={{ gap: "8vh", position: "relative", zIndex: 10, }}
         >
           <h1 className="text-white self-center uppercase">
             Mobile Projects
           </h1>
-          <div style={{ margin: "0 auto" }} className="w-[80vw] sm:w-[60vw] mt-5">
+          <div style={{ margin: "0 auto" }} className="w-[70vw] sm:w-[60vw] mt-5">
             <Swiper navigation>
-              {mobileImageContainer
+              {window.innerWidth >= 640 && mobileImageContainer
                 .reduce((accumulator, currentValue, index) => {
                   if (index % 3 === 0) {
                     accumulator.push(
@@ -292,7 +290,7 @@ export default function Home() {
                 }, [])
                 .map((imageGroup, index) => (
                   <SwiperSlide key={index}>
-                    <div className="flex  gap-[3vw]">
+                    <div className="flex gap-[3vw]">
                       {imageGroup.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
@@ -309,13 +307,31 @@ export default function Home() {
                       ))}
                     </div>
                   </SwiperSlide>
+                ))
+              }
+              {window.innerWidth < 640 &&
+                mobileImageContainer.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <div
+                      onClick={() => handleImageClick(image)}
+                      style={{
+                        background: `url(${image}) center no-repeat`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        aspectRatio: "2 / 3.5",
+                        width: "100%",
+                        alignSelf:"center",
+                        borderRadius: "3%",
+                      }}
+                    ></div>
+                  </SwiperSlide>
                 ))}
             </Swiper>
           </div>
         </div>
         <div
           ref={logoProjects}
-          className="self-end flex flex-col"
+          className="self-center sm:self-end flex flex-col"
           style={{
             paddingTop: "10vh",
             paddingBottom: "20vh",
@@ -325,12 +341,12 @@ export default function Home() {
             fontSize:'3vw'
           }}
         >
-          <h1 className="text-white self-center text-xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl uppercase">
+          <h1 className="text-white self-center text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl uppercase">
             Logo Projects
           </h1>
           <div style={{ margin: "0 auto" }} className="w-[80vw] sm:w-[60vw] mt-5">
             <Swiper navigation>
-              {logoImageContainer
+              {window.innerWidth >= 640 && logoImageContainer
                 .reduce((accumulator, currentValue, index) => {
                   if (index % 3 === 0) {
                     accumulator.push(
@@ -361,10 +377,27 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                 ))}
+                {window.innerWidth < 640 &&
+                logoImageContainer.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <div
+                      onClick={() => handleImageClick(image)}
+                      style={{
+                        background: `url(${image}) center no-repeat`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        aspectRatio: "2 / 2",
+                        width: "100%",
+                        alignSelf:"center",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
+                  </SwiperSlide>
+                ))}
             </Swiper>
           </div>
         </div>
-        <div
+        {/* <div
           style={{ position: "sticky", zIndex: 0 }}
           className="h-[230vw] sm:h-[180vw] h-[150vw] -mt-[270vw] xs:-mt-[215vw] sm:-mt-[220vw]  md:-mt-[190vw] lg:-mt-[180vw] xl:-mt-[175vw]"
         >
@@ -388,7 +421,7 @@ export default function Home() {
               />
             </Suspense>
           </Canvas>
-        </div>
+        </div> */}
       </div>
       {selectedImage && (
               <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-80" onClick={() => setSelectedImage(null)}>
@@ -507,3 +540,4 @@ export default function Home() {
     </div>
   );
 }
+
