@@ -32,8 +32,8 @@ export default function Design() {
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-[2vw]' style={{width:'75vw'}}>
-                    <h1 className='uppercase text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl'>Design Your Experience <br/>Define Your Brand</h1>
-                    <p className='text-xs w-[110%] sm:text-lg md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
+                    <h1 className='uppercase text-4xl w-[120%] md:w-[90%] sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl'>Design Your Experience <br/>Define Your Brand</h1>
+                    <p className='text-md w-[125%] sm:text-lg md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
                     Elevate your digital presence with our comprehensive UI/UX & digital design services. Whether it's a seamless user journey or a logo that defines your brand, we bring together creativity and precision to design experiences that captivate and inspire. <br/><br/>
                     From intuitive web and mobile interfaces to timeless logos, we tailor every element to reflect the core of your brand, ensuring every detail contributes to a cohesive and engaging user experience. Let us shape your digital identity with designs that speak to your audience and amplify your success.
                     </p> 
@@ -141,3 +141,4 @@ export default function Design() {
     
   )
 }
+
