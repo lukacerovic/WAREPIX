@@ -21,8 +21,8 @@ export default function MVP() {
       <div className='flex flex-col'>
             <div className='flex-col sm:flex-col md:flex-col lg:flex xl:flex 2xl:flex-row 3xl:flex lg:gap-0 items-center' style={{paddingInline:'2vw'}}>
                 <div className='text-white flex flex-col gap-[2vw]' style={{width:'80vw'}}>
-                    <h1 className='uppercase text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl'>Animate Your <br/>Imagination</h1>
-                    <p className='text-xs w-[110%] sm:text-lg md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
+                    <h1 className='uppercase w-[120%] md:w-[80%] text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl'>Animate Your <br/>Imagination</h1>
+                    <p className='text-md w-[110%] sm:text-xl md:text-xl lg:text-lg lg:w-[100%] xl:text-2xl'>
                     Welcome to our animation services! At WAREPIX, we specialize in creating captivating animations that bring your ideas to life. <br/><br/>
                     Whether you need 2D or 3D animation for entertainment, education, marketing, or any other purpose, we've got you covered. Our team of skilled animators is dedicated to delivering top-notch animations tailored to your specific needs and requirements.
                     </p> 
@@ -48,3 +48,4 @@ export default function MVP() {
     
   )
 }
+
