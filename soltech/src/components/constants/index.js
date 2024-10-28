@@ -273,10 +273,9 @@
       company_name: "",
       iconBg: "#383E56",
       points: [
-        "Tailored Visual Concepts – Custom-made templates that reflect your brand identity and vision",
-        "Responsive Design Mockups – Sketched layouts optimized for various devices and screen sizes.",
-        "User-Centered Layouts – Designs crafted to enhance user engagement and seamless navigation.",
-        "Design-Ready for Development – Professional mockups ready for easy handoff to developers for implementation.",
+        "Custom Visuals – Templates tailored to reflect your brand.",
+        "Responsive Layouts – Designs optimized for all screens.",
+        "Development-Ready – Mockups for easy handoff to developers.",
       ],
     },
     {
@@ -284,10 +283,9 @@
       company_name: "",
       iconBg: "#E6DEDD",
       points: [
-        "Custom UI Concepts – Tailored app designs that capture your brand essence and user needs.",
-        "Intuitive User Flows – Visual layouts that prioritize user experience and streamline navigation.",
-        "Device-Specific Mockups – Designs optimized for various mobile devices, ensuring a consistent look and feel.",
-        "Handoff-Ready Designs – High-quality mockups that facilitate easy transition to development teams for implementation.",
+        "Tailored UI – App designs capturing your brand essence.",
+        "User-Centric Flows – Layouts that enhance user experience.",
+        "Device-Optimized – Consistent design across mobile devices.",
       ],
     },
     {
@@ -295,24 +293,22 @@
       company_name: "",
       iconBg: "#383E56",
       points: [
-        "Multiple Designs & Ideas – We provide over 10 initial logo ideas and concepts, allowing clients to explore various styles and collaboratively refine to find the perfect fit for their brand.",
-        "Creative Concept Development – Unique logo ideas tailored to represent your brand’s identity and values.",
-        "Versatile Design Options – Multiple design variations to choose from, ensuring your logo fits various applications.",
-        "Professional Aesthetics – High-quality visuals crafted with attention to detail, making your brand stand out.",
-        "Brand Identity Alignment – Logos designed to harmonize with your overall branding strategy and messaging.",
+        "Creative Concepts – Unique logos representing your brand.",
+        "Versatile Options – Multiple styles for various uses.",
+        "Brand-Aligned – Logos that fit your brand identity.",
       ],
     },
   ];
+  
   const animationsServices = [
     {
       title: "2D & 3D Modeling",
       company_name: "",
       iconBg: "#383E56",
       points: [
-        "Custom Model Creation – Tailored 2D and 3D models designed to meet your specific project requirements.",
-        "High-Quality Textures – Realistic textures and materials applied to models for enhanced visual appeal.",
-        "Flexible Formats – Deliverables available in various formats for easy integration into different projects.",
-        "Collaboration and Feedback – Iterative design process with regular client feedback to ensure the final model meets expectations.",
+        "Custom Models – Tailored 2D and 3D models for your needs.",
+        "Realistic Textures – High-quality textures for visual appeal.",
+        "Flexible Formats – Models available in multiple formats.",
       ],
     },
     {
@@ -320,10 +316,9 @@
       company_name: "",
       iconBg: "#E6DEDD",
       points: [
-        "Dynamic Motion Design – Engaging animations that effectively communicate your message and captivate your audience.",
-        "Character Animation – Creation of lifelike character movements that add personality and depth to your projects.",
-        "Storyboarding and Concept Development – Comprehensive planning phase to outline and visualize your animation before production.",
-        "Final Delivery in Multiple Formats – Exported animations in various formats suitable for different platforms and uses.",
+        "Engaging Motion – Animations that captivate your audience.",
+        "Lifelike Characters – Realistic character movements add depth.",
+        "Concept Development – Storyboarding to plan your animation.",
       ],
     },
     {
@@ -331,13 +326,13 @@
       company_name: "",
       iconBg: "#E6DEDD",
       points: [
-        "Creative Storytelling – We develop engaging narratives that captivate your audience and effectively convey your message.",
-        "Variety of Animation Styles – Offering a range of animation styles, including 2D, 3D, and stop-motion, tailored to meet your needs and brand identity.",
-        "High-Quality Execution – Our team of experts utilizes cutting-edge tools and techniques to create animations that look professional and visually appealing.",
-        "Flexible Lengths – Animations are available in various lengths, from short promotional clips to in-depth presentations, to suit your specific requirements.",
+        "Creative Storytelling – Engaging narratives for impact.",
+        "Variety of Styles – 2D, 3D, and stop-motion animations.",
+        "High-Quality Visuals – Professional execution with top tools.",
       ],
     },
   ];
+  
 
   const mvpServices = [
     {
@@ -345,9 +340,9 @@
       company_name: "",
       iconBg: "#383E56",
       points: [
-        "Quick Turnaround – We prioritize speed without compromising quality, allowing you to see your MVP come to life in record time.",
-        "Interactive Prototypes – Test and refine your idea with clickable prototypes, offering a tangible look at core features before full development.",
-        "User-Centered Feedback Loops – Gather valuable insights early by testing the prototype with real users, iterating based on their feedback."
+        "Deliver fast results without sacrificing quality, bringing your MVP to life quickly.",
+        "Test your concept with clickable prototypes to preview core features before full build.",
+        "Get early insights by testing prototypes with real users and refining based on feedback.",
       ],
       paragraphs: [
         "With our rapid prototyping service, you get a quick, high-fidelity version of your MVP idea, helping you validate your assumptions and make key decisions early in the process. We focus on creating interactive prototypes that you can share with stakeholders and potential users, collecting valuable feedback that drives informed development decisions."
@@ -358,9 +353,9 @@
       company_name: "",
       iconBg: "#E6DEDD",
       points: [
-        "Focus on Essential Features – We hone in on the most crucial functionalities to deliver a working MVP with minimal complexity.",
-        "Scalable Codebase – Building with future growth in mind, our MVPs are designed to be scalable, ensuring that additional features can be integrated smoothly.",
-        "Efficient Development Cycles – Our agile approach ensures that key features are developed efficiently, keeping your project on track."
+        "We prioritize key functionalities to deliver a streamlined MVP.",
+        "Our MVPs are built to scale easily, allowing seamless future upgrades.",
+        "Our agile process ensures timely delivery of core features."
       ],
       paragraphs: [
         "The core feature development process revolves around creating a functional MVP that focuses on your project's most essential aspects. We ensure that the initial codebase is built for scalability, so when you're ready to add new features or scale the product, it can be done smoothly without the need for complete reworks."
@@ -371,9 +366,9 @@
       company_name: "",
       iconBg: "#383E56",
       points: [
-        "Real-World Testing – Test your MVP in real market conditions to gauge interest and gather vital feedback.",
-        "User Metrics & Analytics – Track user behavior and engagement through built-in analytics, providing data for further improvements.",
-        "Iterative Improvements – Make adjustments to your MVP based on real-world user interactions and feedback, ensuring a more polished final product."
+        "Test your MVP in the market to measure interest and gather feedback.",
+        "Track user engagement with built-in analytics for improvement insights.",
+        "Refine your MVP based on real user feedback for a polished product."
       ],
       paragraphs: [
         "Market testing and validation are crucial to the success of your MVP. We provide tools to analyze user interactions, measure engagement, and capture critical data that informs future iterations. By launching your MVP in a controlled environment, you can refine your product before fully investing in a larger-scale launch."
@@ -384,9 +379,9 @@
       company_name: "",
       iconBg: "#E6DEDD",
       points: [
-        "Seamless Launch Process – We help you launch your MVP smoothly, with full support during the transition from development to market.",
-        "Performance Monitoring – Post-launch, we monitor your MVP’s performance, ensuring everything runs smoothly and fixing any issues that arise.",
-        "Continuous Updates – As your product evolves, we provide ongoing support and updates, ensuring that your MVP grows alongside your business."
+        "We support a smooth MVP launch from development to market.",
+        "We monitor your MVP post-launch to keep it running smoothly.",
+        "We provide ongoing support and updates as your MVP grows with your business."
       ],
       paragraphs: [
         "Once your MVP is ready for launch, we ensure a smooth transition to market. Our post-launch support includes monitoring the performance of your product and making necessary updates to optimize its functionality. As your business grows, we remain your technical partner, providing continuous updates and improvements to keep your MVP competitive."
