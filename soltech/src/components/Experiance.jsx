@@ -42,7 +42,7 @@ const textVariant = (delay) => {
         iconStyle={{ background: experience.iconBg }}
       >
         <div>
-          <h3 className='text-white text-2xl font-bold'>{experience.title}</h3>
+          <p className='text-white text-2xl font-bold uppercase' style={{fontSize:"2rem"}}>{experience.title}</p>
         </div>
   
         <ul className='mt-5 list-disc ml-5 space-y-3'>
@@ -51,7 +51,7 @@ const textVariant = (delay) => {
               key={`experience-point-${index}`}
               className='text-white-100 text-md pl-1 tracking-wider py-[1vh]' 
             >
-              {point}
+              <p>{point}</p>
             </li>
           ))}
         </ul>
