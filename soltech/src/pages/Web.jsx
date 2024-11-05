@@ -58,8 +58,8 @@ export default function Web() {
                     </div>
                     
                 </div>
-                <div>
-                  <img src="images/webMain2.png"/>
+                <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <img src="images/webMain2.png" className="w-[90%]" style={{alignSelf:"center"}} />
                 </div>
             </div>
         </div>
