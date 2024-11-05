@@ -15,7 +15,7 @@ export default function NavBar() {
       <div className='hidden lg:flex justify-between items-center px-8 py-4'>
         <div style={{ width: '10%' }}>
           <Link to='/'>
-            <img src='images/soltechLogo.png' className='rounded-full border-2 border-blue-500' alt="Logo" />
+            <img src='images/warepixLogo.png' alt="Logo" />
           </Link>
         </div>
         <div className='text-white flex self-center justify-between' style={{ gap: '2vw' }}>
@@ -49,7 +49,7 @@ export default function NavBar() {
       <div className='lg:hidden flex justify-between items-center px-8 py-4'>
         <div className='w-[20%] sm:w-[15%] md:w-[10%] lg:w-[10%] xl:w-[10%]'>
           <Link to='/'>
-            <img src='images/soltechLogo.png' className='rounded-full border-2 border-blue-500' alt="Logo" />
+            <img src='images/warepixLogo.png' alt="Logo" />
           </Link>
         </div>
         <IoMenu color='white' size={24} onClick={handleMenuClick} className='cursor-pointer' />
