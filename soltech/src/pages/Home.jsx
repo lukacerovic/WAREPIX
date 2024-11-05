@@ -451,12 +451,7 @@ export default function Home() {
             <div style={{ width: "20%" }}>
               <img
                 className="shadow"
-                src="/images/soltechLogo.png"
-                style={{
-                  borderWidth: "2px",
-                  borderColor: "#5271FF",
-                  borderRadius: "50%",
-                }}
+                src="/images/warepixLogo.png"
               />
             </div>
           </div>
