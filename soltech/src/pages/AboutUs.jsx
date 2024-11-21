@@ -42,13 +42,13 @@ export default function AboutUs() {
                     <div className='rounded-3xl flex flex-col items-center justify-center relative left-[3vw] sm:left-[15vw]' style={{padding:'0.7vw',background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <IoPeople className='text-[4vw] md:text-[2vw]' color='white'/>
-                            <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Happy Clients</p>
+                            <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-5'>Happy Clients</p>
                         </div>
                         <div>
                             <h1 className='text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl rounded-3xl text-center text-cyan-300'>500+</h1>
                         </div>  
                     </div>
-                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[12vw] sm:left-[22vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
+                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[7vw] sm:left-[22vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <GiProgression className='text-[4vw] md:text-[2vw]' color='white'/>
                             <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Projects Created</p>
@@ -58,7 +58,7 @@ export default function AboutUs() {
                         </div>
                         
                     </div>
-                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[19vw] sm:left-[29vw] py-[1vw]' style={{ background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
+                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[11vw] sm:left-[29vw] py-[1vw]' style={{ background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaMoneyBillTrendUp className='text-[4vw] md:text-[2vw]' color='white'/>
                             <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Flexible Price</p>
@@ -67,21 +67,21 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className='flex flex-col' style={{gap:'2vw'}}>
-                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[38vw] sm:left-[50vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
+                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[25vw] sm:left-[50vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaPeopleGroup className='text-[4vw] md:text-[2vw]' color='white'/>
                             <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Members of a team</p>
                         </div>
                         <h1 className='text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl rounded-3xl text-center text-cyan-300'>53</h1>
                     </div>
-                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[31vw] sm:left-[45vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
+                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[21vw] sm:left-[45vw]' style={{padding:'0.7vw', background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <AiOutlineFieldTime className='text-[4vw] md:text-[2vw]' color='white'/>
                             <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Working Hours</p>
                         </div>
                         <h1 className='text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl rounded-3xl text-center text-cyan-300'>24/7</h1>
                     </div>
-                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[24vw] sm:left-[40vw] py-[1vw]' style={{ background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
+                    <div className='rounded-3xl flex flex-col items-center justify-center relative left-[17vw] sm:left-[40vw] py-[1vw]' style={{ background:'linear-gradient(to left, #5170FF, #FF66C4)', borderRadius:'1vw'}}>
                         <div className='flex items-center' style={{gap:'1vw'}}>
                             <FaTeamspeak className='text-[4vw] md:text-[2vw]' color='white'/>
                             <p className='text-white rounded-3xl text-[2.5vw] md:text-[1.5vw] px-3'>Constant Dialog</p>
@@ -398,7 +398,7 @@ Our team of talented professionals is dedicated to delivering exceptional result
 
 What sets us apart is our holistic approach to digital solutions. We don't just create websites or apps – we craft immersive experiences that resonate with your audience and drive meaningful engagement. From concept to execution, we work closely with our clients to ensure every aspect of their digital strategy aligns with their goals and objectives.
             </p>
-            <img src='images/warepixLogo.png' className='self-center'/>
+            <img src='images/warepixLogo.png' className='self-center w-[70%] sm:w-[40%]'/>
             <p style={{width:'85%'}} className='text-[2.5vw] md:text-[1.3vw] text-center self-center'>
 
 At WAREPIX, we believe in the power of collaboration and innovation. We take pride in our ability to turn ideas into reality and transform visions into tangible results. Whether you're launching a new product, rebranding your business, or simply looking to elevate your online presence, we're here to help you every step of the way.
