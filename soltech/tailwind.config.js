@@ -5,8 +5,33 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+      fontFamily: {
+        zentry: ["zentry", "sans-serif"],
+        general: ["general", "san-serif"],
+        "circular-web": ["circular-web", "sans-serif"],
+        "rober-medium": ["rober-medium", "sans-serif"],
+        "rober-regular": ["rober-regular", "sans-serif"]
+      },
+      colors: {
+        blue: {
+          50: "#DFDFF0",
+          75: "#DFDFF2",
+          100: "#F0F2FA",
+          200: "#010101",
+          300: "#4FB7DD",
+
+        },
+        violet: {
+          300: "#5724FF",
+        },
+        yellow: {
+          100: "#8E983F",
+          300: "#EDFF66",
+        }
+      },
+    },
   },
   plugins: [],
 }
-

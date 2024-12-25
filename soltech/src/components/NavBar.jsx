@@ -1,87 +1,104 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { IoMenu } from 'react-icons/io5';
+import React, {useRef, useState, useEffect} from 'react'
+import { TiLocationArrow } from 'react-icons/ti';
+import { IoMdMusicalNote } from "react-icons/io";
+import Button from './Button.jsx'; 
+import { useWindowScroll } from 'react-use'; 
+import gsap from 'gsap';
 
-export default function NavBar() {
-  const [showMenu, setShowMenu] = useState(false);
 
-  const handleMenuClick = () => {
-    setShowMenu(!showMenu);
-  };
+const navItems = ["Home", "Services", "About", "Contact"]
+const Navbar = () => {
+    const [isAudioPlay, setIsAudioPlay] = useState(false);
+    const [isIndicatorActive, setIsIndicatorActive] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isNavVisible, setIsNavVisible] = useState(true);
 
+    const navContainerRef = useRef(null);
+    const audioElementRef = useRef(null);
+
+    const { y: currentScrollY } = useWindowScroll();
+
+    useEffect(() => {
+        if (currentScrollY === 0) {
+            setIsNavVisible(true);
+            navContainerRef.current.classList.remove("floating-nav");
+
+        } else if (currentScrollY > lastScrollY) {
+            setIsNavVisible(false);
+            navContainerRef.current.classList.add("floating-nav");
+        } else if (currentScrollY < lastScrollY) {
+            setIsNavVisible(true);
+            navContainerRef.current.classList.add("floating-nav");
+        } 
+        setLastScrollY(currentScrollY);
+    }, [currentScrollY, lastScrollY]);
+
+    useEffect(() => {
+        gsap.to(navContainerRef.current, {
+            y: isNavVisible ? 0 : -100,
+            opacity: isNavVisible ? 1 : 0,
+            duration: 0.2,
+        })
+    }, [isNavVisible])
+
+    const toggleAudio = () => {
+        setIsAudioPlay((prev) => !prev)
+        setIsIndicatorActive((prev) => !prev);
+    }
+
+    useEffect(() => {
+        if(isAudioPlay) {
+            audioElementRef.current.play();
+        } else {
+            audioElementRef.current.pause();
+        }
+    }, [isAudioPlay])
   return (
-    <div>
-      {/* Prikaz menija za šire ekrane */}
-      <div className='hidden lg:flex justify-between items-center px-8 py-4'>
-        <div style={{ width: '10%' }}>
-          <Link to='/'>
-            <img src='images/warepixLogo.png' alt="Logo" />
-          </Link>
-        </div>
-        <div className='text-white flex self-center justify-between' style={{ gap: '2vw' }}>
-          <div>
-            <Link to='https://www.warepix.com/#portfolio'>
-              <p className='text-xl xl:text-2xl'>Portfolio</p>
-            </Link>
-          </div>
-          <div>
-            <Link to='https://www.warepix.com/#services'>
-              <p className='text-xl xl:text-2xl'>Services</p>
-            </Link>
-          </div>
-          <div>
-            <Link to='https://www.warepix.com/about'>
-              <p className='text-xl xl:text-2xl'>About Us</p>
-            </Link>
-          </div>
-          <div>
-            <Link to='https://www.warepix.com/work-details'>
-              <p className='text-xl xl:text-2xl'>How We Work</p>
-            </Link>
-          </div>
-          <div>
-            <Link to='https://www.warepix.com/#contact'>
-              <p className='text-xl xl:text-2xl'>Contact</p>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className='lg:hidden flex justify-between items-center px-8 py-4'>
-        <div className='w-[20%] sm:w-[15%] md:w-[10%] lg:w-[10%] xl:w-[10%]'>
-          <Link to='/'>
-            <img src='images/warepixLogo.png' alt="Logo" />
-          </Link>
-        </div>
-        <IoMenu color='white' size={24} onClick={handleMenuClick} className='cursor-pointer' />
-      </div>
-
-      <div className={`lg:hidden absolute z-50 w-full flex flex-col items-center py-4 bg-gray-800 transition-all duration-500 ease-in-out ${showMenu ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <div>
-          <Link to='https://www.warepix.com/#portfolio'>
-            <h1 className='text-xl text-white'>Portfolio</h1>
-          </Link>
-        </div>
-        <div>
-          <Link to='https://www.warepix.com/#services'>
-            <h1 className='text-xl text-white'>Services</h1>
-          </Link>
-        </div>
-        <div>
-          <Link to='https://www.warepix.com/about'>
-            <h1 className='text-xl text-white'>About Us</h1>
-          </Link>
-        </div>
-        <div>
-          <Link to='https://www.warepix.com/work-details'>
-            <h1 className='text-xl text-white'>How We Work</h1>
-          </Link>
-        </div>
-        <div>
-          <Link to='https://www.warepix.com/#contact'>
-            <h1 className='text-xl text-white'>Contact</h1>
-          </Link>
-        </div>
-      </div>
+    <div
+      ref={navContainerRef}
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
+    >
+      <header className="absolute top-1/2 w-full -translate-y-1/2">
+        <nav className="flex size-full items-center justify-between p-4">
+                <div className="flex items-center gap-7">
+                    <div className="bg-blue-50 rounded-full p-2">
+                        <img src="/img/logo.png" alt="logo" className="w-10"/>
+                    </div>
+                    
+                    <Button 
+                        id="product-button"
+                        title="Portfolio"
+                        rightIcon={<TiLocationArrow/>}
+                        containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+                    />
+                </div>
+                <div className="flex h-full items-center">
+                    <div className="hidden md:block">
+                        {navItems.map((item) => (
+                            <a key={item} href={`#${item.toLowerCase()}`} className="nav-hover-btn">{item}</a>
+                        ))}
+                    </div>
+                    <button onClick={toggleAudio} className="ml-10 flex items-center space-x-0.5">
+                        <audio ref={audioElementRef} className="hidden" src="/audio/loop.mp3" loop/>
+                        <div className="flex h-10 w-20 rounded-full items-center justify-center gap-2">
+                            <IoMdMusicalNote color={"white"} size={30}/>
+                            <div className="flex space-x-1">
+                                {[1, 2, 3, 4].map((bar) => (
+                                    <div 
+                                        key={bar} 
+                                        className={`indicator-line ${isIndicatorActive ? "active" : ""}`} 
+                                        style={{animationDelay: `${bar * 0.1}s`}}
+                                    />
+                                ))}
+                            </div>
+                            
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </header>
     </div>
-  );
+  )
 }
+
+export default Navbar
