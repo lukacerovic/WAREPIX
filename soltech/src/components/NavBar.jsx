@@ -1,7 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react'
 import { TiLocationArrow } from 'react-icons/ti';
 import { IoMdMusicalNote } from "react-icons/io";
-import Button from './Button.jsx'; 
+import Button from './Button'; 
 import { useWindowScroll } from 'react-use'; 
 import gsap from 'gsap';
 
