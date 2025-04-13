@@ -5,8 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      
+    extend: { 
       fontFamily: {
         zentry: ["zentry", "sans-serif"],
         general: ["general", "san-serif"],
@@ -30,6 +29,20 @@ export default {
           100: "#8E983F",
           300: "#EDFF66",
         }
+      },
+      keyframes: {
+        'pulse-left': {
+          '0%, 100%': { opacity: 0.2, transform: 'translateX(0)' },
+          '50%': { opacity: 1, transform: 'translateX(-4px)' },
+        },
+        'pulse-right': {
+          '0%, 100%': { opacity: 0.2, transform: 'translateX(0)' },
+          '50%': { opacity: 1, transform: 'translateX(4px)' },
+        },
+      },
+      animation: {
+        'pulse-left': 'pulse-left 1.5s infinite',
+        'pulse-right': 'pulse-right 1.5s infinite',
       },
     },
   },

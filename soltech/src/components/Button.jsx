@@ -7,13 +7,15 @@ const Button = (props) => {
         rightIcon, 
         leftIcon, 
         containerClass,
-        backgroundColor } = props
+        backgroundColor,
+        href
+    } = props
   return (
     <div id={id} className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full ${backgroundColor ? backgroundColor : 'bg-violet-50'} px-7 py-3 text-black ${containerClass}`}>
         <span className="relative incline-flex overflow-hidden font-general text-xs uppercase">
-            <div>
+            <a href={href}>
                 {title}
-            </div>
+            </a>
             
         </span>
         {rightIcon}

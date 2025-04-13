@@ -6,7 +6,7 @@ import { useWindowScroll } from 'react-use';
 import gsap from 'gsap';
 
 
-const navItems = ["Home", "Services", "About", "Contact"]
+const navItems = ["Home", "About", "Services", "Contact"]
 const Navbar = () => {
     const [isAudioPlay, setIsAudioPlay] = useState(false);
     const [isIndicatorActive, setIsIndicatorActive] = useState(false);
@@ -70,6 +70,7 @@ const Navbar = () => {
                         title="Portfolio"
                         rightIcon={<TiLocationArrow/>}
                         containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+                        href={"#services"}
                     />
                 </div>
                 <div className="flex h-full items-center">

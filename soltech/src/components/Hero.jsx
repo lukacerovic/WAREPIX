@@ -54,7 +54,7 @@ const Hero = () => {
                     <p className="mb-10 max-w-64 font-general text-xl uppercase text-blue-100">
                         Give your ideas <br/> Digital breath
                     </p>
-                    <Button id="watch-trailer" title="Contact Us" rightIcon={<TiLocationArrow/>} containerClass="flex-center gap-1 text-black"/>
+                    <Button href={"#contact"} id="watch-trailer" title="Contact Us" rightIcon={<TiLocationArrow/>} containerClass="flex-center gap-1 text-black"/>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ const Hero = () => {
                 <p className="mb-10 max-w-64 font-robert-regular text-xl text-black">
                     Give your ideas <br/> Digital breath
                 </p>
-                <Button id="watch-trailer" title="Contact Us" rightIcon={<TiLocationArrow/>} containerClass="flex-center gap-1 text-black"/>
+                <Button href={"#contact"} id="watch-trailer" title="Contact Us" rightIcon={<TiLocationArrow/>} containerClass="flex-center gap-1 text-black"/>
             </div>
         </div>
     </div>

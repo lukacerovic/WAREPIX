@@ -57,12 +57,40 @@ const MacWeb = () => {
   });
 
   return (
-    <div id="web" className="min-h-screen w-100">
+    <div id="web" className="min-h-screen w-100 relative flex flex-col">
       <AnimatedTitle
         title="<b>W</b>eb Te<b>m</b>pl<b>a</b>tes"
         sectionId="#web"
         containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
       />
+      <div className="flex items-center justify-center md:gap-10 self-center absolute top-[15%] md:top-[25%] space-x-6">
+        {/* Leva strana <<<<<< */}
+        <div className="flex space-x-1 animate-pulse-left">
+          <span className="md:text-3xl text-pink-300">&lt;</span>
+          <span className="md:text-3xl text-pink-400">&lt;</span>
+          <span className="md:text-3xl text-pink-500">&lt;</span>
+          <span className="md:text-3xl text-fuchsia-500">&lt;</span>
+          <span className="md:text-3xl text-violet-500">&lt;</span>
+          <span className="md:text-3xl text-violet-600">&lt;</span>
+          <span className="md:text-3xl text-violet-700">&lt;</span>
+        </div>
+
+        {/* Tekst */}
+        <p className="font-circular-web text-[#dfdff0] text-sm md:text-lg">Swipe On The Laptop Screen To Explore</p>
+
+        {/* Desna strana >>>>>> */}
+        <div className="flex space-x-1 animate-pulse-right">
+          <span className="md:text-3xl text-violet-700">&gt;</span>
+          <span className="md:text-3xl text-violet-600">&gt;</span>
+          <span className="md:text-3xl text-violet-500">&gt;</span>
+          <span className="md:text-3xl text-fuchsia-500">&gt;</span>
+          <span className="md:text-3xl text-pink-500">&gt;</span>
+          <span className="md:text-3xl text-pink-400">&gt;</span>
+          <span className="md:text-3xl text-pink-300">&gt;</span>
+        </div>
+      </div>
+
+
       <div className="h-dvh w-100 flex items-center justify-center" id="img">
         <div className="web-gallery h-[100vh] w-[100vw]">
           <div className="relative w-full md:h-full flex">
